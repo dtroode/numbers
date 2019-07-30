@@ -335,7 +335,7 @@ img {
 section.main__intr {
   grid-template-columns: 1fr 1fr;
   margin-top: 4rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 4rem);
 }
 
 section.main__intr a {
