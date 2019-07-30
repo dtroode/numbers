@@ -154,11 +154,11 @@ p {
 
 a,
 th.footer__contacts__link {
-  -webkit-transition: all linear 0.2s;
-  -moz-transition: all linear 0.2s;
-  -ms-transition: all linear 0.2s;
-  -o-transition: all linear 0.2s;
-  transition: all linear 0.2s;
+  -webkit-transition: color linear 0.2s, background-color linear 0.2s;
+  -moz-transition: color linear 0.2s, background-color linear 0.2s;
+  -ms-transition: color linear 0.2s, background-color linear 0.2s;
+  -o-transition: color linear 0.2s, background-color linear 0.2s;
+  transition: color linear 0.2s, background-color linear 0.2s;
 }
 
 a {
