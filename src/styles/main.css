@@ -1,0 +1,411 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("/src/fonts/Montserrat-ExtraBold.woff2?v=3.5") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("/src/fonts/Montserrat-SemiBold.woff2?v=3.5") format("woff2");
+}
+
+* {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+*::selection {
+  color: var(--main-fg);
+  background-color: var(--accent);
+}
+
+*::-moz-selection {
+  color: var(--main-fg);
+  background-color: var(--accent);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background: var(--main-bg-to-black);
+}
+
+header,
+section.main__intr {
+  display: grid;
+}
+
+header {
+  grid-template-columns: 1fr 1fr;
+  z-index: 1;
+  top: 0;
+  width: calc(100% - 6rem);
+  height: 4rem;
+  padding: 0 var(--padding);
+  background-color: var(--additional-bg);
+}
+
+header nav,
+header svg {
+  align-self: center;
+}
+
+header nav a {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+header nav:first-of-type a {
+  color: var(--main-fg);
+}
+
+header nav:nth-of-type(2) a {
+  margin: 0 0.5rem 0 0;
+  color: var(--accent);
+}
+
+header nav:nth-of-type(2) a:hover,
+section.main__intr a:hover {
+  color: var(--main-fg);
+}
+
+header svg {
+  justify-self: end;
+}
+
+main {
+  background-color: var(--main-bg);
+}
+
+footer {
+  background-color: var(--accent);
+}
+
+footer p {
+  margin-bottom: 1em;
+}
+
+h1,
+h2,
+h3,
+table.mend span.latin {
+  font-weight: 800;
+  line-height: 1em;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  color: var(--main-fg);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3,
+p,
+th,
+td {
+  font-size: 1rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+p,
+a,
+span,
+table {
+  font-weight: 600;
+}
+
+p,
+a,
+span {
+  line-height: 1.5em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+a,
+th.footer__contacts__link {
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--main-fg);
+}
+
+span {
+  display: block;
+}
+
+picture {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  font-weight: 800;
+  text-shadow: none;
+  text-align: center;
+}
+
+table + table {
+  margin-top: 2rem;
+}
+
+table.footer__contacts {
+  margin: 0;
+  height: 3rem;
+}
+
+table.mend td {
+  color: #282f38;
+  text-align: left;
+  height: 100px;
+  width: 100px;
+}
+
+table.mend span.latin {
+  font-size: 2rem;
+}
+
+th.footer__contacts__link {
+  position: relative;
+  padding: 0;
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+th.footer__contacts__link a {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+th.footer__contacts__link a svg {
+  place-self: center;
+  height: 1.5rem;
+}
+
+th.footer__contacts__link--tg {
+  background-color: #1287c2;
+}
+
+th.footer__contacts__link--tw {
+  background-color: #55adee;
+}
+
+th.footer__contacts__link--mail {
+  background-color: #62c8f8;
+}
+
+th.footer__contacts__link--tg:hover,
+th.footer__contacts__link--mail:hover {
+  background-color: var(--accent);
+}
+
+th.footer__contacts__link--tw:hover {
+  background-color: #e33827;
+}
+
+th,
+td {
+  padding: 1rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+th {
+  background-color: var(--accent);
+}
+
+td {
+  background-color: var(--main-bg);
+  color: var(--accent);
+}
+
+td p {
+  margin: 0;
+}
+
+td.yel {
+  background: #fbdb99;
+}
+
+td.red {
+  background: #cd3333;
+}
+
+td.bla,
+td.egr,
+td.ebl {
+  background: #282f38;
+  color: #ebeae7 !important;
+}
+
+td.blu {
+  background: #4c68c2;
+}
+
+td.sal {
+  background: #25c647;
+}
+
+td.gre {
+  background: #08a827;
+}
+
+td.egr {
+  background: #1e485f;
+}
+
+td.pur {
+  background: #a677f4;
+}
+
+td.lbl {
+  background: #5cbbf2;
+}
+
+td.ebl {
+  background: #05418e;
+}
+
+td.gra {
+  background: #ebeae7;
+  color: #282f38;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.main__intr {
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 4rem);
+}
+
+section.main__intr a {
+  color: var(--accent);
+}
+
+footer,
+section.main__intr__txt,
+section.main__math,
+section.main__phys,
+section.main__chem {
+  padding: var(--padding);
+}
+
+section.main__intr__txt p {
+  color: var(--main-fg);
+}
+
+section.main__intr__img {
+  position: relative;
+}
+
+section.main__intr__img span {
+  position: absolute;
+  bottom: var(--padding);
+  left: var(--padding);
+  padding: 0.5rem;
+  line-height: 1em;
+  color: var(--main-fg);
+  background-color: var(--main-bg);
+}
+
+section.main__math,
+section.main__chem {
+  background-color: var(--additional-bg);
+}
+
+section.main__math h2,
+section.main__math h3,
+section.main__chem h2,
+section.main__chem h3 {
+  color: var(--accent);
+}
+
+section.main__math table tr:nth-child(2n - 1) th:nth-child(2n - 1),
+section.main__chem table tr:nth-child(2n - 1) th:nth-child(2n - 1) {
+  background-color: rgb(227, 56, 39);
+}
+
+section.main__math table:not(.mend) tr td:nth-of-type(2n),
+section.main__chem table:not(.mend) tr td:nth-of-type(2n),
+section.main__phys table:not(.mend) tr td:nth-of-type(2n) {
+  background-color: var(--additional-bg);
+}
+
+section.main__phys {
+  background-color: var(--accent);
+}
+
+section.main__phys h2,
+section.main__phys h3 {
+  color: var(--main-fg);
+}
+
+section.main__phys th {
+  color: var(--accent);
+}
+
+section.main__phys th {
+  background-color: var(--main-fg);
+}
+
+section.main__phys table tr:nth-child(2n - 1) th:nth-child(2n - 1) {
+  background-color: var(--additional-fg);
+}
+
+section.table-container {
+  overflow-x: scroll;
+  margin-top: 0.5rem;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+section.table-container::-webkit-scrollbar {
+  height: 0;
+}

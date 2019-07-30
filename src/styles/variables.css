@@ -1,0 +1,10 @@
+:root {
+  --accent: #e85342;
+  --additional-bg: #ebeae7;
+  --main-fg: #282f38;
+  --additional-fg: #2f3541;
+  --main-bg: #ffffff;
+
+  --padding: 3rem;
+  --sub-padding: 1.5rem;
+}
