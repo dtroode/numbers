@@ -12,9 +12,11 @@
     grid-template-rows: auto auto;
   }
   header {
+    position: static;
     padding: var(--padding);
     width: unset;
     height: auto;
+    box-shadow: 0;
   }
   header nav {
     justify-self: left;
@@ -26,9 +28,19 @@
     width: 33.33vw;
   }
   section.main__intr {
+    margin-top: 0;
     min-height: unset;
   }
   img {
     width: 100vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    display: none;
+  }
+  h1.mob {
+    display: block;
   }
 }

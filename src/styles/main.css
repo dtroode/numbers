@@ -44,6 +44,7 @@ section.main__intr {
 }
 
 header {
+  position: fixed;
   grid-template-columns: 1fr 1fr;
   z-index: 1;
   top: 0;
@@ -51,10 +52,10 @@ header {
   height: 4rem;
   padding: 0 var(--padding);
   background-color: var(--additional-bg);
+  box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.25);
 }
 
-header nav,
-header svg {
+header nav {
   align-self: center;
 }
 
@@ -77,10 +78,6 @@ section.main__intr a:hover {
   color: var(--main-fg);
 }
 
-header svg {
-  justify-self: end;
-}
-
 main {
   background-color: var(--main-bg);
 }
@@ -89,8 +86,17 @@ footer {
   background-color: var(--accent);
 }
 
+footer p,
+footer p a {
+  color: var(--main-fg);
+}
+
 footer p {
   margin-bottom: 1em;
+}
+
+footer p a {
+  text-decoration: underline;
 }
 
 h1,
@@ -105,33 +111,29 @@ h1,
 h2 {
   margin-top: 0;
   text-transform: uppercase;
+  text-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-  margin-bottom: 1rem;
-  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.375em;
   color: var(--main-fg);
+}
+
+h1.mob {
+  display: none;
 }
 
 h2 {
   margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3,
-p,
-th,
-td {
-  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
 }
 
 h3 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 0;
+  font-size: 1.5rem;
 }
 
 p,
@@ -142,6 +144,12 @@ table {
 }
 
 p,
+th,
+td {
+  font-size: 1rem;
+}
+
+p,
 a,
 span {
   line-height: 1.5em;
@@ -149,7 +157,7 @@ span {
 
 p {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 a,
@@ -199,11 +207,34 @@ table.mend td {
   color: #282f38;
   text-align: left;
   height: 100px;
-  width: 100px;
+}
+
+table.mend span {
+  font-size: 0.75rem;
 }
 
 table.mend span.latin {
   font-size: 2rem;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+th {
+  background-color: var(--accent);
+}
+
+td {
+  background-color: var(--main-bg);
+  color: var(--accent);
+}
+
+td p {
+  margin: 0;
 }
 
 th.footer__contacts__link {
@@ -223,6 +254,7 @@ th.footer__contacts__link a {
 th.footer__contacts__link a svg {
   place-self: center;
   height: 1.5rem;
+  fill: var(--main-fg);
 }
 
 th.footer__contacts__link--tg {
@@ -244,26 +276,6 @@ th.footer__contacts__link--mail:hover {
 
 th.footer__contacts__link--tw:hover {
   background-color: #e33827;
-}
-
-th,
-td {
-  padding: 1rem;
-  font-weight: 600;
-  line-height: 1;
-}
-
-th {
-  background-color: var(--accent);
-}
-
-td {
-  background-color: var(--main-bg);
-  color: var(--accent);
-}
-
-td p {
-  margin: 0;
 }
 
 td.yel {
@@ -322,7 +334,8 @@ img {
 
 section.main__intr {
   grid-template-columns: 1fr 1fr;
-  min-height: calc(100vh - 4rem);
+  margin-top: 4rem;
+  min-height: 100vh;
 }
 
 section.main__intr a {
@@ -401,7 +414,7 @@ section.main__phys table tr:nth-child(2n - 1) th:nth-child(2n - 1) {
 
 section.table-container {
   overflow-x: scroll;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   width: 100%;
   -webkit-overflow-scrolling: touch;
 }
