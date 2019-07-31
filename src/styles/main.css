@@ -51,9 +51,15 @@ header {
   width: calc(100% - 6rem);
   height: 4rem;
   padding: 0 var(--secondary-padding);
-  background-color: var(--additional-bg-75);
+  background-color: var(--additional-bg);
   box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(20px);
+}
+
+@supports (backdrop-filter: blur(20px)) {
+  header {
+    background-color: var(--additional-bg-75);
+    backdrop-filter: blur(20px);
+  }
 }
 
 header nav {
@@ -417,6 +423,7 @@ section.table-container {
   overflow-x: scroll;
   margin-top: 1rem;
   width: 100%;
+  scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
 }
 
