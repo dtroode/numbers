@@ -50,9 +50,10 @@ header {
   top: 0;
   width: calc(100% - 6rem);
   height: 4rem;
-  padding: 0 var(--padding);
-  background-color: var(--additional-bg);
+  padding: 0 var(--secondary-padding);
+  background-color: var(--additional-bg-75);
   box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
 }
 
 header nav {
@@ -83,6 +84,7 @@ main {
 }
 
 footer {
+  padding: var(--secondary-padding);
   background-color: var(--accent);
 }
 
@@ -334,7 +336,7 @@ img {
 
 section.main__intr {
   grid-template-columns: 1fr 1fr;
-  margin-top: 4rem;
+  padding-top: 4rem;
   min-height: calc(100vh - 4rem);
 }
 
@@ -342,12 +344,11 @@ section.main__intr a {
   color: var(--accent);
 }
 
-footer,
 section.main__intr__txt,
 section.main__math,
 section.main__phys,
 section.main__chem {
-  padding: var(--padding);
+  padding: var(--primary-padding) var(--secondary-padding);
 }
 
 section.main__intr__txt p {
@@ -360,8 +361,8 @@ section.main__intr__img {
 
 section.main__intr__img span {
   position: absolute;
-  bottom: var(--padding);
-  left: var(--padding);
+  bottom: var(--secondary-padding);
+  left: var(--secondary-padding);
   padding: 0.5rem;
   line-height: 1em;
   color: var(--main-fg);

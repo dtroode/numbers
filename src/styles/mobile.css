@@ -1,7 +1,7 @@
 @media screen and (max-width: 870px) {
   :root {
-    --padding: 1.5rem;
-    --sub-padding: 0.75rem;
+    --primary-padding: 2.4rem;
+    --secondary-padding: 1.5rem;
   }
   html {
     font-size: 16px;
@@ -13,10 +13,12 @@
   }
   header {
     position: static;
-    padding: var(--padding);
+    padding: var(--secondary-padding);
     width: unset;
     height: auto;
+    background-color: var(--additional-bg);
     box-shadow: 0;
+    backdrop-filter: unset;
   }
   header nav {
     justify-self: left;
@@ -28,7 +30,7 @@
     width: 33.33vw;
   }
   section.main__intr {
-    margin-top: 0;
+    padding-top: 0;
     min-height: unset;
   }
   img {
