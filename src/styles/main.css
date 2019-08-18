@@ -107,6 +107,10 @@ footer p a {
   text-decoration: underline;
 }
 
+footer p a:hover {
+  color: var(--main-bg);
+}
+
 h1,
 h2,
 h3,
