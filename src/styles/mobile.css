@@ -12,16 +12,21 @@
     grid-template-rows: auto auto;
   }
   header {
-    position: static;
-    padding: var(--secondary-padding);
+    padding: 1rem var(--secondary-padding);
     width: unset;
     height: auto;
-    background-color: var(--additional-bg);
-    box-shadow: 0;
-    backdrop-filter: unset;
   }
   header nav {
     justify-self: left;
+  }
+  header nav.nav--enabled {
+    display: none;
+  }
+  header.header--scrolled {
+    grid-template-columns: unset;
+  }
+  header.header--scrolled nav:nth-child(2) {
+    display: none;
   }
   footer table {
     padding: 0;

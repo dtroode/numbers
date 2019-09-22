@@ -53,18 +53,18 @@
     <link rel="icon" sizes="16x16" href="/src/images/logos/logo-16.png" type="img/png" />
   </head>
   <body>
-    <header>
+    <header id="head">
       <nav>
-        <a href="/">Величины</a>
+        <a href="#math">Математика</a>
+        <a href="#phys">Физика</a>
+        <a href="#chem">Химия</a>
       </nav>
-      <nav>
-        <a href="#math" onclick="event.preventDefault();document.getElementById('math').scrollIntoView({ behavior: 'smooth' });">Математика</a>
-        <a href="#phys" onclick="event.preventDefault();document.getElementById('phys').scrollIntoView({ behavior: 'smooth' });">Физика</a>
-        <a href="#chem" onclick="event.preventDefault();document.getElementById('chem').scrollIntoView({ behavior: 'smooth' });">Химия</a>
+      <nav id="topLink">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1.5rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="arcs"><path d="M12 19V6M5 12l7-7 7 7"/></svg></a>
       </nav>
     </header>
     <main>
-      <section class="main__intr">
+      <section class="main__intr" id="intr">
         <section class="main__intr__txt">
           <h1>Пост<br />Величины</h1>
           <h1 class="mob">Пост Вели-чины</h1>
@@ -75,7 +75,7 @@
             справочный материал. Надеемся, пригодится.<br />
             — Какие-то технари
           </p>
-          <a href="#math" onclick="event.preventDefault();document.getElementById('math').scrollIntoView({ behavior: 'smooth' });">Следуйте вниз, господа</a>
+          <a href="#math">Следуйте вниз, господа</a>
         </section>
           <figure class="main__intr__img">
           <picture>
@@ -1765,5 +1765,6 @@
         </tr>
       </table>
     </footer>
+    <script src="src/scripts/header.js"></script>
   </body>
 </html>
