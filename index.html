@@ -77,13 +77,12 @@
           </p>
           <a href="#math" onclick="event.preventDefault();document.getElementById('math').scrollIntoView({ behavior: 'smooth' });">Следуйте вниз, господа</a>
         </section>
-        <section class="main__intr__img">
+          <figure class="main__intr__img">
           <picture>
             <source
               srcset="
                 /src/images/large/bg.webp   1200w,
-                /src/images/medium/bg.webp   800w,
-                /src/images/small/bg.webp    400w
+                /src/images/medium/bg.webp   800w
               "
               sizes="100%"
               type="image/webp"
@@ -91,15 +90,14 @@
             <source
               srcset="
                 /src/images/large/bg.jpg   1200w,
-                /src/images/medium/bg.jpg   800w,
-                /src/images/small/bg.jpg    400w
+                /src/images/medium/bg.jpg   800w
               "
               sizes="100%"
             />
             <img src="/src/images/bg.jpg" alt="maths-physics-chemistry-constants" loading="lazy" />
           </picture>
-          <span>Просто красивая картинка</span>
-        </section>
+          <figcaption>Просто красивая картинка ↑</figcaption>
+        </figure>
       </section>
       <section class="main__math" id="math">
         <h2>Математика</h2>
@@ -1690,7 +1688,7 @@
     </main>
     <footer>
       <p>
-        <a href="https://davidkistauri.now.sh" target="_blank" rel="noopener">Давид Кистаури.</a><br />
+        <a href="https://davidkistauri.ru" target="_blank" rel="noopener">Давид Кистаури.</a><br />
         Создано <s>при поддержке</s> самостоятельно.<br />Написать "спасибо"
         можно сюда:
       </p>

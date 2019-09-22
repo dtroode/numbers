@@ -31,10 +31,12 @@
   }
   section.main__intr {
     padding-top: 0;
-    min-height: unset;
   }
   img {
     width: 100vw;
+  }
+  figcaption {
+    margin: 0.8rem var(--secondary-padding) 1rem var(--secondary-padding);
   }
 }
 
