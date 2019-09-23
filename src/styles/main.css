@@ -55,7 +55,7 @@ header {
   position: sticky;
   z-index: 1;
   top: 0;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   height: 4rem;
   padding: 0 var(--secondary-padding);
   border-bottom: 1px solid var(--additional-bg);
@@ -65,7 +65,6 @@ header {
 }
 
 header.header--scrolled {
-  grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid var(--main-bg);
   background-color: var(--additional-bg);
 }
@@ -75,12 +74,7 @@ header nav {
 }
 
 header nav:nth-child(2) {
-  display: none;
   justify-self: end;
-}
-
-header nav.nav--enabled {
-  display: block;
 }
 
 header nav a {
@@ -90,6 +84,30 @@ header nav a {
 
 header nav a:not(:last-child) {
   margin: 0 0.5rem 0 0;
+}
+header nav a:not(:last-child).x,
+header nav:nth-child(2) a {
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s,
+    margin-left cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s;
+}
+
+header nav a:not(:last-child).x {
+  margin-left: -1.85rem;
+}
+
+header.header--scrolled nav a:not(:last-child).x,
+header.header--scrolled nav:last-child a {
+  visibility: visible;
+  opacity: 1;
+}
+
+header.header--scrolled nav a:not(:last-child).x {
+  visibility: visible;
+  opacity: 1;
+  margin-left: 0;
 }
 
 header nav a:hover,
@@ -188,11 +206,8 @@ p {
 
 a,
 th.footer__contacts__link {
-  -webkit-transition: color linear 0.2s, background-color linear 0.2s;
-  -moz-transition: color linear 0.2s, background-color linear 0.2s;
-  -ms-transition: color linear 0.2s, background-color linear 0.2s;
-  -o-transition: color linear 0.2s, background-color linear 0.2s;
-  transition: color linear 0.2s, background-color linear 0.2s;
+  transition: color cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s,
+    background-color cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s;
 }
 
 a {

@@ -19,7 +19,10 @@
   header nav {
     justify-self: left;
   }
-  header nav.nav--enabled {
+  header nav a:not(:last-child).x {
+    display: none;
+  }
+  header nav.nav--disabled {
     display: none;
   }
   header.header--scrolled {
