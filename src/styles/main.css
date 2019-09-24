@@ -334,6 +334,10 @@ section.mob-nav {
   transition: opacity cubic-bezier(0.07, 0.74, 0.38, 1.01) 1s;
 }
 
+section.mob-nav--opened {
+  display: grid;
+}
+
 section.main__intr {
   grid-template-columns: 1fr 1fr;
 }

@@ -63,9 +63,6 @@
     background-color: var(--additional-bg);
     opacity: 0;
   }
-  section.mob-nav--opened {
-    display: grid;
-  }
   section.mob-nav nav a,
   section.mob-nav section a,
   section.mob-nav section span {
@@ -86,7 +83,7 @@
   section.mob-nav section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-self: flex-end;
+    align-self: end;
   }
   section.mob-nav section p {
     margin-bottom: 0;
@@ -95,7 +92,7 @@
     display: table;
     text-decoration: underline;
   }
-  @supports (backdrop-filter: blur()) {
+  @supports (backdrop-filter: blur(25px)) {
     section.mob-nav {
       background-color: var(--additional-bg-50);
       backdrop-filter: blur(25px);
