@@ -86,7 +86,7 @@
   section.mob-nav section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-self: end;
+    align-self: flex-end;
   }
   section.mob-nav section p {
     margin-bottom: 0;
