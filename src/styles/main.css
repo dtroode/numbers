@@ -89,7 +89,6 @@ footer span:not(:last-child) {
   margin: 0 0.5rem 0 0;
 }
 
-header nav a:not(:last-child).x,
 header nav:nth-child(2) a {
   display: inline-block;
   opacity: 0;
@@ -98,22 +97,10 @@ header nav:nth-child(2) a {
     margin-left cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s;
 }
 
-header nav a:not(:last-child).x {
-  margin-left: -1.85rem;
-}
-
-header.header--scrolled nav a:not(:last-child).x,
 header.header--scrolled nav:last-child a {
   visibility: visible;
   opacity: 1;
 }
-
-header.header--scrolled nav a:not(:last-child).x {
-  visibility: visible;
-  opacity: 1;
-  margin-left: 0;
-}
-
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -140,7 +127,8 @@ footer a {
   text-decoration: underline;
 }
 
-footer a:hover {
+footer a:hover,
+section.mob-nav a:hover {
   color: var(--accent);
 }
 
@@ -220,7 +208,13 @@ a:hover {
 }
 
 a.a--h1 {
-  display: none;
+  display: inline-block;
+}
+
+a.a--h1 h1 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: var(--accent);
 }
 
 span {

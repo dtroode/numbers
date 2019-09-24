@@ -20,15 +20,10 @@
     width: 100%;
     justify-self: left;
   }
-  header nav a {
-    font-size: 1.25rem;
-  }
   header nav a h1 {
-    display: inline-block;
     margin-bottom: 0;
   }
-  header nav a:not(:first-child),
-  header nav a:not(:last-child).x {
+  header nav a:not(:first-child) {
     display: none;
   }
   header nav.nav--disabled {
@@ -63,20 +58,13 @@
     background-color: var(--additional-bg);
     opacity: 0;
   }
-  section.mob-nav nav a,
-  section.mob-nav section a,
-  section.mob-nav section span {
+  section.mob-nav a,
+  section.mob-nav span {
     color: var(--additional-fg);
   }
   section.mob-nav nav a:not(:first-child),
   section.mob-nav section a {
     display: table;
-  }
-  section.mob-nav > nav a {
-    font-size: 1.25rem;
-  }
-  section.mob-nav > nav a:not(:first-child) {
-    margin-bottom: 0.25rem;
   }
   section.mob-nav nav a h1 {
     vertical-align: top;
@@ -91,19 +79,13 @@
   section.mob-nav section p {
     margin-bottom: 0;
   }
-  section.mob-nav section a {
-    text-decoration: underline;
-  }
   @supports (backdrop-filter: blur(25px)) {
     section.mob-nav {
       background-color: var(--additional-bg-50);
       backdrop-filter: blur(25px);
     }
   }
-  a.a--h1 {
-    display: inline-block;
-  }
-  a h1 {
+  a.a--h1 h1 {
     vertical-align: top;
     font-size: 1.5rem;
     color: var(--accent);
