@@ -55,15 +55,43 @@
   <body>
     <header id="head">
       <nav>
+        <a href="/" class="a--h1"><h1>Пост Величины</h1></a>
         <a href="/" class="x"><svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1.5rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a>
         <a href="#math">Математика</a>
         <a href="#phys">Физика</a>
         <a href="#chem">Химия</a>
+        <button id="open"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" stroke="var(--additional-fg)" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
       </nav>
       <nav class="nav--disabled" id="topLink">
         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1.5rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="butt" stroke-linejoin="arcs"><path d="M12 19V6M5 12l7-7 7 7"/></svg></a>
       </nav>
     </header>
+    <section class="mob-nav" id="mobNav">
+      <nav>
+        <a href="/"><h1>Пост Величины</h1></a>
+        <button id="close"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" stroke="var(--additional-fg)" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+        <a href="#math">Математика</a>
+        <a href="#phys">Физика</a>
+        <a href="#chem">Химия</a>
+      </nav>
+      <section>
+        <p>
+          <a href="https://davidkistauri.ru" target="_blank" rel="noopener">Давид Кистаури</a>  
+          <span>Сделал сам</span>  <span>Лайк, шер</span>
+        </p>
+        <nav>
+          <a target="_blank" href="https://t.me/dtroode_channel" aria-label="Телеграм" rel="noopener">
+            Телеграм 
+          </a>
+          <a target="_blank" href="https://twitter.com/dtroode" aria-label="Твиттер" rel="noopener">
+            Твиттер 
+          </a>
+          <a target="_blank" href="mailto:davidkis113@gmail.com" aria-label="Почта">
+            Почта 
+          </a>
+        </nav>
+      </section>
+    </section>
     <main>
       <section class="main__intr" id="intr">
         <section class="main__intr__txt">
@@ -1689,82 +1717,20 @@
     </main>
     <footer>
       <p>
-        <a href="https://davidkistauri.ru" target="_blank" rel="noopener">Давид Кистаури.</a><br />
-        Создано <s>при поддержке</s> самостоятельно.<br />Написать "спасибо"
-        можно сюда:
+        <a href="https://davidkistauri.ru" target="_blank" rel="noopener">Давид Кистаури</a>  
+        <span>Сделал сам</span>  <span>Лайк, шер</span>
       </p>
-      <table class="footer__contacts">
-        <tr>
-          <th class="footer__contacts__link footer__contacts__link--tg">
-            <a target="_blank" href="https://t.me/dtroode" aria-label="Телеграм" rel="noopener">
-              <svg
-                aria-label="Thank you message"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                x="0px"
-                y="0px"
-                viewBox="0 0 63.918 54.832"
-                style="enable-background:new 0 0 63.918 54.832;"
-                xml:space="preserve"
-              >
-                <path
-                  d="M61.889,0.103L0.933,23.34c-1.228,0.477-1.245,2.384-0.047,2.931L16.5,32.675l5.815,18.34  c0.346,0.988,1.577,1.32,2.372,0.639l8.931-8.311l16.979,11.261c0.881,0.551,2.042,0.053,2.248-0.965l11.04-51.852  C64.121,0.633,62.986-0.323,61.889,0.103z M25.183,36.148l-0.992,9.428l-4.714-14.513L52.722,9.231L25.183,36.148z"
-                />
-              </svg>
-            </a>
-          </th>
-          <th class="footer__contacts__link footer__contacts__link--tw">
-            <a target="_blank" href="https://twitter.com/dtroode" aria-label="Твиттер" rel="noopener">
-              <svg
-                aria-label="Thank you message"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                x="0px"
-                y="0px"
-                viewBox="0 0 62.769 50.501"
-                style="enable-background:new 0 0 62.769 50.501;"
-                xml:space="preserve"
-              >
-                <g>
-                  <path
-                    d="M62.77,5.992c-2.283,1.141-4.85,1.712-7.418,1.997c2.568-1.712,4.565-3.994,5.706-7.133   c-2.568,1.427-5.136,2.568-8.274,3.138C50.501,1.426,47.078,0,43.369,0C36.236,0,30.53,5.706,30.53,12.839   c0,1.141,0,1.997,0.285,2.853C20.258,15.121,10.843,9.986,4.281,2.282C3.14,4.279,2.569,6.276,2.569,8.844   c0,4.565,2.283,8.274,5.706,10.557c-1.997,0-3.994-0.571-5.706-1.712v0.285c0,6.277,4.28,11.413,10.271,12.554   c-1.141,0.285-2.283,0.571-3.424,0.571c-0.856,0-1.712,0-2.283-0.285c1.712,5.136,6.277,8.845,11.983,8.845   c-4.28,3.424-9.986,5.421-15.978,5.421c-1.141,0-1.997,0-3.138-0.285c5.706,3.709,12.269,5.706,19.687,5.706   c23.681,0,36.52-19.401,36.52-36.52v-1.712C59.061,10.842,61.058,8.56,62.77,5.992z"
-                  />
-                </g>
-              </svg>
-            </a>
-          </th>
-          <th class="footer__contacts__link footer__contacts__link--mail">
-            <a target="_blank" href="mailto:davidkis113@gmail.com" aria-label="Почта">
-              <svg
-                aria-label="Thank you message"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                x="0px"
-                y="0px"
-                viewBox="0 0 62.2 41.376"
-                style="enable-background:new 0 0 62.2 41.376;"
-                xml:space="preserve"
-              >
-                <g>
-                  <polygon points="43.412,20.732 62.2,39.52 62.2,1.945  " />
-                  <path
-                    d="M32.905,27.53L60.422,0.013C60.4,0.012,60.381,0,60.359,0H1.92l27.528,27.528C30.365,28.448,31.988,28.447,32.905,27.53z"
-                  />
-                  <path
-                    d="M34.761,29.383c-0.955,0.953-2.226,1.48-3.583,1.48c-1.358,0-2.631-0.525-3.585-1.48L20.57,22.36L1.603,41.327   c0.082,0.011,0.155,0.048,0.24,0.048h58.504L41.559,22.587L34.761,29.383z"
-                  />
-                  <path
-                    d="M0.008,1.8C0.008,1.815,0,1.827,0,1.841v37.377l18.713-18.713L0.008,1.8z"
-                  />
-                </g>
-              </svg>
-            </a>
-          </th>
-        </tr>
-      </table>
+      <nav>
+        <a target="_blank" href="https://t.me/dtroode_channel" aria-label="Телеграм" rel="noopener">
+          Телеграм 
+        </a>
+        <a target="_blank" href="https://twitter.com/dtroode" aria-label="Твиттер" rel="noopener">
+          Твиттер 
+        </a>
+        <a target="_blank" href="mailto:davidkis113@gmail.com" aria-label="Почта">
+          Почта 
+        </a>
+      </nav>
     </footer>
     <script src="src/scripts/header.js"></script>
   </body>
