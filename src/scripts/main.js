@@ -13,17 +13,15 @@ window.addEventListener("scroll", () => {
 function closeNav() {
   mobNav.style.opacity = "0";
   setTimeout(() => {
-    mobNav.classList.remove("mob-nav--opened");
-
+    mobNav.style.display = "none";
   }, 100);
   document.body.style.overflowY = "scroll";
 }
 
 document.querySelector("#open").addEventListener("click", () => {
-  mobNav.style.opacity = "1";
+  mobNav.style.display = "grid";
   setTimeout(() => {
-    mobNav.classList.add("mob-nav--opened");
-
+    mobNav.style.opacity = "1";
   }, 100);
   document.body.style.overflowY = "hidden";
 })

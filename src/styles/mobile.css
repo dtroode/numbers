@@ -75,6 +75,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-self: end;
+    margin-top: var(--primary-padding);
   }
   section.mob-nav section p {
     margin-bottom: 0;
