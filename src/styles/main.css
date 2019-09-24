@@ -325,7 +325,7 @@ img {
 
 section.mob-nav {
   display: none;
-  transition: opacity cubic-bezier(0.07, 0.74, 0.38, 1.01) 1s;
+  transition: opacity cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s;
 }
 
 section.main__intr {
