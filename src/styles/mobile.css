@@ -68,11 +68,14 @@
   section.mob-nav section span {
     color: var(--additional-fg);
   }
+  section.mob-nav nav a:not(:first-child),
+  section.mob-nav section a {
+    display: table;
+  }
   section.mob-nav > nav a {
     font-size: 1.25rem;
   }
   section.mob-nav > nav a:not(:first-child) {
-    display: block;
     margin-bottom: 0.25rem;
   }
   section.mob-nav nav a h1 {
@@ -89,7 +92,6 @@
     margin-bottom: 0;
   }
   section.mob-nav section a {
-    display: table;
     text-decoration: underline;
   }
   @supports (backdrop-filter: blur(25px)) {
