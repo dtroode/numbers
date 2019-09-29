@@ -53,6 +53,7 @@
     bottom: 0;
     left: 0;
     grid-template-columns: 1fr;
+    align-items: end;
     padding: 1rem var(--secondary-padding) var(--primary-padding)
       var(--secondary-padding);
     background-color: var(--additional-bg);
@@ -79,10 +80,7 @@
     grid-template-columns: 1fr 1fr;
     align-self: end;
     margin-top: var(--primary-padding);
-  }
-  section.mob-nav section a,
-  section.mob-nav section span {
-    color: var(--main-fg);
+    opacity: 0.6;
   }
   section.mob-nav section p {
     margin-bottom: 0;
