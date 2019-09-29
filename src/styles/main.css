@@ -222,6 +222,7 @@ span {
 }
 
 table {
+  border: 2px solid var(--accent);
   border-collapse: collapse;
   font-weight: 800;
   text-shadow: none;
