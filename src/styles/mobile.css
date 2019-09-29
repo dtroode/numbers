@@ -58,6 +58,9 @@
     background-color: var(--additional-bg);
     opacity: 0;
   }
+  section.mob-nav > nav a {
+    font-size: 1.5rem;
+  }
   section.mob-nav a,
   section.mob-nav span {
     color: var(--additional-fg);
@@ -77,6 +80,10 @@
     align-self: end;
     margin-top: var(--primary-padding);
   }
+  section.mob-nav section a,
+  section.mob-nav section span {
+    color: var(--main-fg);
+  }
   section.mob-nav section p {
     margin-bottom: 0;
   }
@@ -85,6 +92,9 @@
       background-color: var(--additional-bg-50);
       backdrop-filter: blur(25px);
     }
+  }
+  a.a--h1 {
+    width: calc(100% - 3rem);
   }
   a.a--h1 h1 {
     vertical-align: top;
