@@ -52,15 +52,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-    grid-template-columns: 1fr;
-    align-items: end;
+    grid-template-rows: 1fr auto;
     padding: 1rem var(--secondary-padding) var(--primary-padding)
       var(--secondary-padding);
     background-color: var(--additional-bg);
     opacity: 0;
-  }
-  section.mob-nav > nav a {
-    font-size: 1.5rem;
   }
   section.mob-nav a,
   section.mob-nav span {
