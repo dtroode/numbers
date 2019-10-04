@@ -14,8 +14,15 @@
   src: url("/src/fonts/Montserrat-SemiBold.woff2?v=3.5") format("woff2");
 }
 
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("/src/fonts/Inter-SemiBold.woff2?v=3.5") format("woff2");
+}
+
 * {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -145,6 +152,15 @@ table.mend span.latin {
 }
 
 h1,
+h2,
+h3,
+a,
+p,
+figcaption {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+h1,
 h2 {
   margin-top: 0;
   text-transform: uppercase;
@@ -224,6 +240,8 @@ span {
 table {
   border: 2px solid var(--accent);
   border-collapse: collapse;
+  font-family: Inter, Helvetica, sans-serif;
+  font-feature-settings: "tnum" 1;
   font-weight: 800;
   text-shadow: none;
   text-align: center;
