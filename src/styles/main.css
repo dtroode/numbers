@@ -238,13 +238,11 @@ span {
 }
 
 table {
-  border: 2px solid var(--accent);
   border-collapse: collapse;
   font-family: Inter, Helvetica, sans-serif;
   font-feature-settings: "tnum" 1;
   font-weight: 800;
   text-shadow: none;
-  text-align: center;
 }
 
 table + table {
@@ -258,7 +256,6 @@ table.footer__contacts {
 
 table.mend td {
   color: #282f38;
-  text-align: left;
   height: 100px;
 }
 
@@ -272,12 +269,15 @@ table.mend span.latin {
 
 th,
 td {
+  max-width: 175px;
   padding: 0.75rem;
   font-weight: 600;
   line-height: 1;
+  vertical-align: top;
 }
 
 th {
+  text-align: left;
   background-color: var(--accent);
 }
 
@@ -338,6 +338,18 @@ td.gra {
   color: #282f38;
 }
 
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -5px;
+}
+
+sub {
+  vertical-align: baseline;
+  position: relative;
+  bottom: -5px;
+}
+
 img {
   width: 100%;
 }
@@ -378,17 +390,6 @@ section.main__chem h3 {
   color: var(--accent);
 }
 
-section.main__math table tr:nth-child(2n - 1) th:nth-child(2n - 1),
-section.main__chem table tr:nth-child(2n - 1) th:nth-child(2n - 1) {
-  background-color: rgb(227, 56, 39);
-}
-
-section.main__math table:not(.mend) tr td:nth-of-type(2n),
-section.main__chem table:not(.mend) tr td:nth-of-type(2n),
-section.main__phys table:not(.mend) tr td:nth-of-type(2n) {
-  background-color: var(--additional-bg);
-}
-
 section.main__phys {
   background-color: var(--accent);
 }
@@ -404,10 +405,6 @@ section.main__phys th {
 
 section.main__phys th {
   background-color: var(--main-fg);
-}
-
-section.main__phys table tr:nth-child(2n - 1) th:nth-child(2n - 1) {
-  background-color: var(--additional-fg);
 }
 
 section.table-container {
