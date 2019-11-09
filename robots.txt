@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://postvel.now.sh/sitemap.xml
 Host: https://postvel.now.sh

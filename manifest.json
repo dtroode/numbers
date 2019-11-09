@@ -1,5 +1,5 @@
 {
-  "name": "Пост Величины",
+  "name": "Постоянные Величины",
   "short_name": "Константы",
   "icons": [
     {
@@ -29,6 +29,6 @@
     }
   ],
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#f75846"
+  "background_color": "#fff8e1",
+  "theme_color": "#f44336"
 }

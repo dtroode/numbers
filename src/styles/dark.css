@@ -1,10 +1,19 @@
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --additional-bg: #282f38;
-    --main-fg: #ebeae7;
-    --additional-fg: #ffffff;
-    --main-bg: #2f3541;
+    --accent: #e53935;
+    --accent-50: #e5393580;
+    --accent-25: #e5393540;
+    --additional-bg: #e5393520;
+    --main-fg: #fff8e1;
+    --main-bg: #212121;
+    --main-bg-25: #21212140;
 
-    --additional-bg-50: #282f3880;
+    --bro: #a1887f;
+    --egr: #b0bec5;
+  }
+  p,
+  th,
+  td {
+    opacity: 0.8;
   }
 }
