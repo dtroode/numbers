@@ -4,10 +4,10 @@
     --secondary-padding: 3rem;
   }
   html {
-    font-size: 16px;
+    ezfont-size: 16px;
   }
   header section,
-  header nav {
+  ee header nav {
     display: flex;
   }
   header section {
