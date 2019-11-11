@@ -3,11 +3,8 @@
     --primary-padding: 1.17rem;
     --secondary-padding: 3rem;
   }
-  html {
-    ezfont-size: 16px;
-  }
   header section,
-  ee header nav {
+  header nav {
     display: flex;
   }
   header section {
@@ -19,9 +16,6 @@
   }
   header section::-webkit-scrollbar {
     display: none;
-  }
-  footer nav a {
-    margin-right: 0.5rem;
   }
   h1 {
     word-wrap: break-word;

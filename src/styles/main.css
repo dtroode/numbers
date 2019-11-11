@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PR Root UI";
+  font-family: "PT Root UI";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -7,19 +7,11 @@
 }
 
 @font-face {
-  font-family: "PR Root UI";
+  font-family: "PT Root UI";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
   src: url("/src/fonts/PT\ Root\ UI_Bold.woff2?v=3.5") format("woff2");
-}
-
-@font-face {
-  font-family: "EB Garamond";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("/src/fonts/EB\ Garamond.woff2?v=3.5") format("woff2");
 }
 
 * {
@@ -80,7 +72,7 @@ nav * {
 }
 
 nav a {
-  margin: 0 1.17rem 0 0;
+  margin: 0 1rem 0 0;
   line-height: 1.5rem;
 }
 
@@ -101,11 +93,13 @@ main p {
   max-width: 700px;
 }
 
-main h1,
-main h2,
-main h3 {
-  font-family: "EB Garamond", serif;
-  font-variant: small-caps;
+h1,
+h2,
+h3,
+a,
+table,
+p {
+  font-family: "PT Root UI", Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -133,13 +127,6 @@ h1,
 h2 {
   margin-top: 0;
   text-transform: uppercase;
-}
-
-h1,
-a,
-p,
-figcaption {
-  font-family: "PT Root UI", Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -220,7 +207,7 @@ table {
   border-collapse: collapse;
   font-family: Inter, Helvetica, sans-serif;
   font-feature-settings: "tnum" 1;
-  font-weight: 800;
+  font-weight: 700;
   text-shadow: none;
 }
 
@@ -264,18 +251,24 @@ tr:not(:last-child) {
   border-bottom: 1px solid var(--additional-bg);
 }
 
+tr th:not(:last-child),
+tr td:not(:last-child) {
+  padding-right: 1.25rem;
+}
+
 th,
 td {
   max-width: 175px;
-  padding: 0.75rem 1.25rem 0.75rem 0;
-  font-weight: 600;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0;
+  font-weight: 700;
   line-height: 1;
   vertical-align: top;
   opacity: 0.9;
 }
 
 th {
-  font-weight: bold;
   text-align: left;
   color: var(--accent);
 }
