@@ -78,7 +78,10 @@ nav a {
 
 nav a.cont {
   opacity: 0.75;
-  border-bottom: 0;
+}
+
+nav a:not(.cont) {
+  border-bottom-style: dashed;
 }
 
 main {
@@ -202,7 +205,6 @@ span {
 }
 
 table {
-  display: inline-block;
   margin-right: var(--primary-padding);
   border-collapse: collapse;
   font-family: Inter, Helvetica, sans-serif;
@@ -258,7 +260,7 @@ tr td:not(:last-child) {
 
 th,
 td {
-  max-width: 175px;
+  max-width: 12.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 0;
