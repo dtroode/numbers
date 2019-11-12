@@ -205,6 +205,7 @@ span {
 }
 
 table {
+  display: inline-block;
   margin-right: var(--primary-padding);
   border-collapse: collapse;
   font-family: Inter, Helvetica, sans-serif;
@@ -358,6 +359,7 @@ section.table-container {
   margin-top: 1rem;
   margin-right: calc(-1 * var(--primary-padding));
   margin-left: calc(-1 * var(--primary-padding));
+  padding-right: var(--primary-padding);
   padding-left: var(--primary-padding);
   -webkit-overflow-scrolling: touch;
 }
