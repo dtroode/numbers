@@ -208,7 +208,6 @@ table {
   display: inline-block;
   margin-right: var(--primary-padding);
   border-collapse: collapse;
-  font-family: Inter, Helvetica, sans-serif;
   font-feature-settings: "tnum" 1;
   font-weight: 700;
   text-shadow: none;
