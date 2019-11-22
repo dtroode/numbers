@@ -206,7 +206,6 @@ span {
 
 table {
   display: inline-block;
-  margin-right: var(--primary-padding);
   padding: 0.25rem 1rem;
   border-radius: 0.25rem;
   border-collapse: collapse;
