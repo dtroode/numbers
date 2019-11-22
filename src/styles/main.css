@@ -207,9 +207,12 @@ span {
 table {
   display: inline-block;
   margin-right: var(--primary-padding);
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
   border-collapse: collapse;
   font-feature-settings: "tnum" 1;
   font-weight: 700;
+  background-color: var(--table-bg);
   text-shadow: none;
 }
 
@@ -226,19 +229,11 @@ table.td-right td {
 }
 
 table.mend {
-  padding: 0;
   border: 0;
 }
 
 table.mend td {
   height: 100px;
-  padding-left: 0.75rem;
-  border: 1px solid var(--accent);
-  background-color: var(--main-bg);
-}
-
-table.mend tr {
-  border-bottom: 0;
 }
 
 table.mend span {
