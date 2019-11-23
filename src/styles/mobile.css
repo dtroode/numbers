@@ -17,6 +17,9 @@
   header section::-webkit-scrollbar {
     display: none;
   }
+  header nav a:last-child {
+    margin-right: var(--primary-padding);
+  }
   h1 {
     word-wrap: break-word;
   }
