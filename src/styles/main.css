@@ -165,7 +165,6 @@ h3 {
 
 p,
 a,
-span,
 table {
   font-weight: 400;
 }
@@ -176,13 +175,8 @@ td {
   font-size: 1rem;
 }
 
-p,
-a,
-span {
-  line-height: 1.4em;
-}
-
 p, a {
+  line-height: 1.4em;
   color: var(--accent);
 }
 
