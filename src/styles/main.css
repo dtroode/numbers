@@ -41,16 +41,11 @@ body {
 header,
 footer {
   width: calc(100% - 2 * var(--primary-padding));
-  margin: 0 auto;
+  margin: 0 var(--primary-padding) var(--secondary-padding) var(--primary-padding);
   background-color: var(--main-bg);
 }
 
-header {
-  margin-bottom: 2.25rem;
-}
-
 footer {
-  margin-bottom: 2.25rem;
   border-top: 1px solid var(--additional-bg);
 }
 
@@ -77,7 +72,7 @@ main hr {
 }
 
 nav {
-  margin: 0.75rem 0;
+  margin: 0.25rem 0;
 }
 
 nav * {
@@ -106,7 +101,6 @@ table,
 p {
   font-family: "PT Root UI", Arial, Helvetica, sans-serif;
 }
-
 
 h1,
 h2,
