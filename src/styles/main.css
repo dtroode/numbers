@@ -50,6 +50,7 @@ header {
 }
 
 footer {
+  margin-bottom: 2.25rem;
   border-top: 1px solid var(--additional-bg);
 }
 
@@ -68,11 +69,15 @@ header nav a.cont {
 }
 
 footer section {
-  display: table;
+  display: inline-block;
 }
 
 main hr {
   margin: 0 0 1rem 0;
+}
+
+main h1, main p, h2, h3 {
+  max-width: 1200px;
 }
 
 nav {
@@ -92,11 +97,9 @@ main {
   background-color: var(--main-bg);
 }
 
-main h1,
-main h2,
-main h3,
-main p {
-  max-width: 700px;
+main > svg {
+  width: calc(100% - 2*var(--primary-padding));
+  padding: 0 var(--primary-padding);
 }
 
 h1,
@@ -146,6 +149,12 @@ h2 {
   font-size: 2.25rem;
 }
 
+h2 svg {
+  height: 100%;
+  vertical-align: top;
+  fill: var(--main-fg);
+}
+
 h2 + h3 {
   margin-top: 1.5rem;
 }
@@ -172,7 +181,7 @@ td {
 p,
 a,
 span {
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 
 p, a {
@@ -356,6 +365,7 @@ section.main__intr__txt {
 }
 
 section.main__intr__txt p {
+  font-size: 1.5rem;
   color: var(--main-fg);
 }
 
