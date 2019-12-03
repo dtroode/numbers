@@ -21,4 +21,7 @@
   header nav a span {
     display: none;
   }
+  header p {
+    margin: 1rem 0;
+  }
 }

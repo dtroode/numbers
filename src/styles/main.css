@@ -88,6 +88,11 @@ header nav:last-child a {
   background-color: var(--additional-bg);
 }
 
+header p {
+  max-width: 500px;
+  margin: 1rem 0.5rem;
+}
+
 footer section {
   display: inline-block;
 }
