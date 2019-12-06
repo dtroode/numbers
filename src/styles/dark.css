@@ -1,4 +1,4 @@
-/* @media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
   :root {
     --accent: #e53935;
     --accent-50: #e5393580;
@@ -24,4 +24,4 @@
   td {
     opacity: 0.8;
   }
-} */
+}
