@@ -21,3 +21,9 @@
   --primary-padding: 1.875rem;
   --secondary-padding: 3rem;
 }
+
+@media screen and (min-width: 1500px) {
+  :root {
+    --primary-padding: 6.4rem;
+  }
+}

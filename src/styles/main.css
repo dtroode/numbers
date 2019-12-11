@@ -381,9 +381,3 @@ hr {
   border: 0;
   background-color: var(--additional-bg);
 }
-
-@media screen and (min-width: 1500px) {
-  :root {
-    --primary-padding: 6.4rem;
-  }
-}
