@@ -226,12 +226,8 @@ table {
   text-shadow: none;
 }
 
-table + table {
-  margin-top: 2rem;
-}
-
 table.right td,
-table.right tr:first-of-type th,
+table.right tr:first-of-type th:not(:first-child),
 table.part-right tr th:not(:first-of-type),
 table.part-right tr td:not(:first-of-type),
 table.td-right td {
