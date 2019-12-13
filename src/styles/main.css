@@ -43,15 +43,11 @@ footer {
   width: calc(100% - 2 * var(--primary-padding));
   margin-right: var(--primary-padding);
   margin-left: var(--primary-padding);
+  margin-bottom: var(--secondary-padding);
   background-color: var(--main-bg);
 }
 
-header {
-  margin-bottom: 1rem;
-}
-
 footer {
-  margin-bottom: var(--secondary-padding);
   border-top: 1px solid var(--additional-bg);
 }
 
