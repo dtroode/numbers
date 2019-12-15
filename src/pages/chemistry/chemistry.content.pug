@@ -1,0 +1,1438 @@
+-
+	const mainChemConstants = {
+		"name": "Основные химические константы",
+		"content": {
+			"short_name": {
+				"head": "Обозначение",
+				"body": [
+					"V<sub>m</sub>"
+				]
+			},
+			"value": {
+				"head": "Величина",
+				"body": [
+					"22.4 л/моль"
+				]
+			}
+		}
+	}
+
+-
+	const temperatureChem = {
+		"name": "Температуры плавления и кипения",
+		"content": {
+			"head": [
+				"Металл",
+				"t плавления °C",
+				"t кипения °C"
+			],
+			"body": {
+				"first_row": [
+					"Al",
+					"660",
+					"2500"
+				],
+				"second_row": [
+					"Au",
+					"1063",
+					"2950"
+				],
+				"third_row": [
+					"Ba",
+					"710",
+					"1700"
+				],
+				"fourth_row": [
+					"Be",
+					"1284",
+					"2400"
+				],
+				"fifth_row": [
+					"Bi",
+					"271",
+					"1560"
+				],
+				"sixth_row": [
+					"Ca",
+					"850",
+					"1420"
+				],
+				"seventh_row": [
+					"Cd",
+					"321",
+					"765"
+				],
+				"eighth_row": [
+					"Co",
+					"1492",
+					"2900"
+				],
+				"ninth_row": [
+					"Cu",
+					"1083",
+					"2570"
+				],
+				"tenth_row": [
+					"Fe",
+					"1539",
+					"3070"
+				],
+				"eleventh_row": [
+					"Hg",
+					"38",
+					"357"
+				],
+				"twelfth_row": [
+					"In",
+					"157",
+					"2075"
+				],
+				"thirteenth_row": [
+					"K",
+					"64",
+					"779"
+				],
+				"fourteenth_row": [
+					"Li",
+					"181",
+					"1370"
+				],
+				"fifteenth_row": [
+					"Mg",
+					"650",
+					"1107"
+				],
+				"sixteenth_row": [
+					"Mn",
+					"1244",
+					"2095"
+				],
+				"seventeenth_row": [
+					"Na",
+					"98",
+					"882"
+				],
+				"eighteenth_row": [
+					"Nb",
+					"2468",
+					"4500"
+				],
+				"nineteenth_row": [
+					"Pb",
+					"327",
+					"1740"
+				],
+				"twentieth_row": [
+					"Sb",
+					"630",
+					"1635"
+				],
+				"twenty-first_row": [
+					"Sn",
+					"232",
+					"2270"
+				],
+				"twenty-second_row": [
+					"Ta",
+					"3000",
+					"6100"
+				],
+				"twenty-third_row": [
+					"Ti",
+					"1660",
+					"3260"
+				],
+				"twenty-fourth_row": [
+					"Zn",
+					"419",
+					"907"
+				],
+				"twenty-fifth_row": [
+					"Zr",
+					"1860",
+					"4750"
+				]
+			}
+		}
+	}
+	
+-
+	const mainMendeleev = {
+		"head": [
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"9",
+			"10",
+			"11",
+			"12",
+			"13",
+			"14",
+			"15",
+			"16",
+			"17",
+			"18",
+			""
+		],
+		"body": {
+			"first_row": {
+				"hydrogen": {
+					"class": "nonmetals",
+					"info": [
+						"1",
+						"H",
+						"Водород",
+						"1.008"
+					]
+				},
+				"empty_1": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_2": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_3": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_4": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_5": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_6": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_7": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_8": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_9": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_10": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_11": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_12": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_13": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_14": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_15": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_16": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"helium": {
+					"class": "noble-gases",
+					"info": [
+						"2",
+						"He",
+						"Гелий",
+						"4.002"
+					]
+				}
+			},
+			"second_row": {
+				"lithium": {
+					"class": "alkali-metals",
+					"info": [
+						"3",
+						"Li",
+						"Литий",
+						"6.942"
+					]
+				},
+				"beryllium": {
+					"class": "alkaline-earth-metals",
+					"info": [
+						"4",
+						"Be",
+						"Берилий",
+						"9.012"
+					]
+				},
+				"empty_1": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_2": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_3": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_4": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_5": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_6": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_7": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_8": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_9": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_10": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"boron": {
+					"class": "metalloids",
+					"info": [
+						"5",
+						"B",
+						"Бор",
+						"10.81"
+					]
+				},
+				"carbon": {
+					"class": "nonmetals",
+					"info": [
+						"6",
+						"C",
+						"Углерод",
+						"12.01"
+					]
+				},
+				"nitrogen": {
+					"class": "nonmetals",
+					"info": [
+						"7",
+						"N",
+						"Азот",
+						"14"
+					]
+				},
+				"oxygen": {
+					"class": "nonmetals",
+					"info": [
+						"8",
+						"O",
+						"Кислород",
+						"15.99"
+					]
+				},
+				"fluorine": {
+					"class": "halogens",
+					"info": [
+						"9",
+						"F",
+						"Фтор",
+						"18.99"
+					]
+				},
+				"neon": {
+					"class": "noble-gases",
+					"info": [
+						"10",
+						"Ne",
+						"Неон",
+						"20.17"
+					]
+				}
+			},
+			"third_row": {
+				"sodium": {
+					"class": "alkali-metals",
+					"info": [
+						"11",
+						"Na",
+						"Натрий",
+						"22.98"
+					]
+				},
+				"magnesium": {
+					"class": "alkaline-earth-metals",
+					"info": [
+						"12",
+						"Mg",
+						"Магний",
+						"24.3"
+					]
+				},
+				"empty_1": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_2": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_3": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_4": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_5": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_6": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_7": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_8": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_9": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"empty_10": {
+					"class": "transition-metals",
+					"info": ""
+				},
+				"aluminum": {
+					"class": "post-transition-metals",
+					"info": [
+						"13",
+						"Al",
+						"Алюминий",
+						"26.98"
+					]
+				},
+				"silicon": {
+					"class": "metalloids",
+					"info": [
+						"14",
+						"Si",
+						"Кремний",
+						"28.08"
+					]
+				},
+				"phosphorus": {
+					"class": "nonmetals",
+					"info": [
+						"15",
+						"P",
+						"Форсфор",
+						"30.97"
+					]
+				},
+				"sulfur": {
+					"class": "nonmetals",
+					"info": [
+						"16",
+						"",
+						"Сера",
+						"32.06"
+					]
+				},
+				"chlorine": {
+					"class": "halogens",
+					"info": [
+						"17",
+						"Cl",
+						"Хлор",
+						"35.45"
+					]
+				},
+				"argon": {
+					"class": "noble-gases",
+					"info": [
+						"18",
+						"Ar",
+						"Аргон",
+						"39.94"
+					]
+				}
+			},
+			"fourth_row": {
+				"potassium": {
+					"class": "alkali-metals",
+					"info": [
+						"19",
+						"K",
+						"Калий",
+						"39.09"
+					]
+				},
+				"calcium": {
+					"class": "alkaline-earth-metals",
+					"info": [
+						"20",
+						"Ca",
+						"Кальций",
+						"40.07"
+					]
+				},
+				"scandium": {
+					"class": "transition-metals",
+					"info": [
+						"21",
+						"Sc",
+						"Скандий",
+						"44.95"
+					]
+				},
+				"titanium": {
+					"class": "transition-metals",
+					"info": [
+						"22",
+						"Ti",
+						"Титан",
+						"47.86"
+					]
+				},
+				"vanadium": {
+					"class": "transition-metals",
+					"info": [
+						"23",
+						"V",
+						"Ванадий",
+						"50.94"
+					]
+				},
+				"chromium": {
+					"class": "transition-metals",
+					"info": [
+						"24",
+						"Cr",
+						"Хром",
+						"51.99"
+					]
+				},
+				"manganese": {
+					"class": "transition-metals",
+					"info": [
+						"25",
+						"Mn",
+						"Марганец",
+						"54.93"
+					]
+				},
+				"iron": {
+					"class": "transition-metals",
+					"info": [
+						"26",
+						"Fe",
+						"Железо",
+						"55.84"
+					]
+				},
+				"cobalt": {
+					"class": "transition-metals",
+					"info": [
+						"27",
+						"Co",
+						"Кобальт",
+						"58.93"
+					]
+				},
+				"nickel": {
+					"class": "transition-metals",
+					"info": [
+						"28",
+						"Ni",
+						"Никель",
+						"58.69"
+					]
+				},
+				"copper": {
+					"class": "transition-metals",
+					"info": [
+						"29",
+						"Cu",
+						"Медь",
+						"63.54"
+					]
+				},
+				"zinc": {
+					"class": "transition-metals",
+					"info": [
+						"30",
+						"Zn",
+						"Цинк",
+						"65.38"
+					]
+				},
+				"gallium": {
+					"class": "post-transition-metals",
+					"info": [
+						"31",
+						"Ga",
+						"Галий",
+						"69.72"
+					]
+				},
+				"germanium": {
+					"class": "metalloids",
+					"info": [
+						"32",
+						"Ge",
+						"Германий",
+						"72.63"
+					]
+				},
+				"arsenic": {
+					"class": "metalloids",
+					"info": [
+						"33",
+						"As",
+						"Мышьяк",
+						"74.92"
+					]
+				},
+				"selenium": {
+					"class": "nonmetals",
+					"info": [
+						"34",
+						"Se",
+						"Селен",
+						"78.97"
+					]
+				},
+				"bromine": {
+					"class": "halogens",
+					"info": [
+						"35",
+						"Br",
+						"Бром",
+						"79.9"
+					]
+				},
+				"krypton": {
+					"class": "noble-gases",
+					"info": [
+						"36",
+						"Kr",
+						"Криптон",
+						"83.79"
+					]
+				}
+			},
+			"fifth_row": {
+				"rubidium": {
+					"class": "alkali-metals",
+					"info": [
+						"37",
+						"Rb",
+						"Рубидий",
+						"85.46"
+					]
+				},
+				"strontium": {
+					"class": "alkaline-earth-metals",
+					"info": [
+						"38",
+						"Sr",
+						"Стронций",
+						"87.62"
+					]
+				},
+				"yttrium": {
+					"class": "transition-metals",
+					"info": [
+						"39",
+						"Y",
+						"Иттрий",
+						"88.9"
+					]
+				},
+				"zirconium": {
+					"class": "transition-metals",
+					"info": [
+						"40",
+						"Zr",
+						"Цирконий",
+						"91.22"
+					]
+				},
+				"niobium": {
+					"class": "transition-metals",
+					"info": [
+						"41",
+						"Nb",
+						"Ниобий",
+						"92.9"
+					]
+				},
+				"molybdenum": {
+					"class": "transition-metals",
+					"info": [
+						"42",
+						"Mo",
+						"Молибден",
+						"95.95"
+					]
+				},
+				"technetium": {
+					"class": "transition-metals",
+					"info": [
+						"43",
+						"Tc",
+						"Технеций",
+						"98"
+					]
+				},
+				"ruthenium": {
+					"class": "transition-metals",
+					"info": [
+						"44",
+						"Ru",
+						"Рутений",
+						"101"
+					]
+				},
+				"rhodium": {
+					"class": "transition-metals",
+					"info": [
+						"45",
+						"Rh",
+						"Родий",
+						"102.9"
+					]
+				},
+				"palladium": {
+					"class": "transition-metals",
+					"info": [
+						"46",
+						"Pb",
+						"Палладий",
+						"106.4"
+					]
+				},
+				"silver": {
+					"class": "transition-metals",
+					"info": [
+						"47",
+						"Ag",
+						"Серебро",
+						"107.8"
+					]
+				},
+				"cadmium": {
+					"class": "transition-metals",
+					"info": [
+						"48",
+						"Cd",
+						"Кадмий",
+						"112.4"
+					]
+				},
+				"indium": {
+					"class": "post-transition-metals",
+					"info": [
+						"49",
+						"In",
+						"Индий",
+						"114.8"
+					]
+				},
+				"tin": {
+					"class": "post-transition-metals",
+					"info": [
+						"50",
+						"Sn",
+						"Олово",
+						"118.7"
+					]
+				},
+				"antimony": {
+					"class": "metalloids",
+					"info": [
+						"51",
+						"Sb",
+						"Сурьма",
+						"121.7"
+					]
+				},
+				"tellurium": {
+					"class": "metalloids",
+					"info": [
+						"52",
+						"Te",
+						"Теллур",
+						"127.6"
+					]
+				},
+				"iodine": {
+					"class": "halogens",
+					"info": [
+						"53",
+						"I",
+						"Йод",
+						"126.9"
+					]
+				},
+				"xenon": {
+					"class": "noble-gases",
+					"info": [
+						"54",
+						"Xe",
+						"Ксенон",
+						"131.2"
+					]
+				}
+			},
+			"sixth_row": {
+				"cesium": {
+					"class": "alkali-metals",
+					"info": [
+						"55",
+						"Cs",
+						"Цезий",
+						"132.9"
+					]
+				},
+				"barium": {
+					"class": "alkaline-earth-metals",
+					"info": [
+						"56",
+						"Ba",
+						"Барий",
+						"137.3"
+					]
+				},
+				"lanthanides": {
+					"class": "lanthanides",
+					"info": [
+						"57—71",
+						"<nobr>La—Lu</nobr>",
+						"Лантаноиды"
+					]
+				},
+				"hafnium": {
+					"class": "transition-metals",
+					"info": [
+						"72",
+						"Hf",
+						"Гафний",
+						"178.4"
+					]
+				},
+				"tantalum": {
+					"class": "transition-metals",
+					"info": [
+						"73",
+						"Ta",
+						"Тантал",
+						"180.9"
+					]
+				},
+				"tungsten": {
+					"class": "transition-metals",
+					"info": [
+						"74",
+						"W",
+						"Вольфрам",
+						"183.8"
+					]
+				},
+				"rhenium": {
+					"class": "transition-metals",
+					"info": [
+						"75",
+						"Re",
+						"Рений",
+						"186.2"
+					]
+				},
+				"osmium": {
+					"class": "transition-metals",
+					"info": [
+						"76",
+						"Os",
+						"Осмий",
+						"190.2"
+					]
+				},
+				"iridium": {
+					"class": "transition-metals",
+					"info": [
+						"77",
+						"Ir",
+						"Иридий",
+						"192.2"
+					]
+				},
+				"platinum": {
+					"class": "transition-metals",
+					"info": [
+						"78",
+						"Pt",
+						"Платина",
+						"195"
+					]
+				},
+				"gold": {
+					"class": "transition-metals",
+					"info": [
+						"79",
+						"Au",
+						"Золото",
+						"196.9"
+					]
+				},
+				"mercury": {
+					"class": "transition-metals",
+					"info": [
+						"80",
+						"Hg",
+						"Ртуть",
+						"200.5"
+					]
+				},
+				"thallium": {
+					"class": "post-transition-metals",
+					"info": [
+						"81",
+						"Tl",
+						"Таллий",
+						"204.3"
+					]
+				},
+				"lead": {
+					"class": "post-transition-metals",
+					"info": [
+						"82",
+						"Pb",
+						"Свинец",
+						"207.2"
+					]
+				},
+				"bismuth": {
+					"class": "post-transition-metals",
+					"info": [
+						"83",
+						"Bi",
+						"Висмут",
+						"208.9"
+					]
+				},
+				"polonium": {
+					"class": "post-transition-metals",
+					"info": [
+						"84",
+						"Po",
+						"Полоний",
+						"209"
+					]
+				},
+				"astatine": {
+					"class": "halogens",
+					"info": [
+						"85",
+						"At",
+						"Астат",
+						"210"
+					]
+				},
+				"radon": {
+					"class": "noble-gases",
+					"info": [
+						"86",
+						"Rn",
+						"Радон",
+						"222"
+					]
+				}
+			},
+			"seventh_row": {
+				"francium": {
+					"class": "alkali-metals",
+					"info": [
+						"87",
+						"Fr",
+						"Франций",
+						"223"
+					]
+				},
+				"radium": {
+					"class": "alkaline-earth-metals",
+					"info": [
+						"88",
+						"Ra",
+						"Радий",
+						"226"
+					]
+				},
+				"actinides": {
+					"class": "actinides",
+					"info": [
+						"89—103",
+						"<nobr>Ac—Lr</nobr>",
+						"Актиноиды"
+					]
+				},
+				"rutherfordium": {
+					"class": "transition-metals",
+					"info": [
+						"104",
+						"Rf",
+						"Резерфордий",
+						"267"
+					]
+				},
+				"dubnium": {
+					"class": "transition-metals",
+					"info": [
+						"105",
+						"Db",
+						"Дубний",
+						"268"
+					]
+				},
+				"seaborgium": {
+					"class": "transition-metals",
+					"info": [
+						"106",
+						"Sg",
+						"Сиборгий",
+						"269"
+					]
+				},
+				"bohrium": {
+					"class": "transition-metals",
+					"info": [
+						"107",
+						"Bh",
+						"Борий",
+						"270"
+					]
+				},
+				"hassium": {
+					"class": "transition-metals",
+					"info": [
+						"108",
+						"Hs",
+						"Хассий",
+						"269"
+					]
+				},
+				"meitnerium": {
+					"class": "trash",
+					"info": [
+						"109",
+						"Mt",
+						"Мейтнерий",
+						"278"
+					]
+				},
+				"darmstadtium": {
+					"class": "trash",
+					"info": [
+						"110",
+						"Ds",
+						"Дармштадтий",
+						"281"
+					]
+				},
+				"roentgentium": {
+					"class": "trash",
+					"info": [
+						"111",
+						"Rg",
+						"Рентгений",
+						"282"
+					]
+				},
+				"copernicium": {
+					"class": "transition-metals",
+					"info": [
+						"112",
+						"Cn",
+						"Коперниций",
+						"285"
+					]
+				},
+				"nihonium": {
+					"class": "trash",
+					"info": [
+						"113",
+						"Nh",
+						"Нихоний",
+						"286"
+					]
+				},
+				"flerovium": {
+					"class": "trash",
+					"info": [
+						"114",
+						"Fl",
+						"Флеровий",
+						"289"
+					]
+				},
+				"moscovium": {
+					"class": "trash",
+					"info": [
+						"115",
+						"Mc",
+						"Московий",
+						"289"
+					]
+				},
+				"livermorium": {
+					"class": "trash",
+					"info": [
+						"116",
+						"Lv",
+						"Ливерморий",
+						"293"
+					]
+				},
+				"tennessine": {
+					"class": "trash",
+					"info": [
+						"117",
+						"Ts",
+						"Теннессин",
+						"294"
+					]
+				},
+				"oganesson": {
+					"class": "trash",
+					"info": [
+						"118",
+						"Og",
+						"Оганессон",
+						"294"
+					]
+				}
+			}
+		}
+	}
+
+-
+	const lanthanides = {
+		"head": "",
+		"body": {
+			"first_row": {
+				"lanthanum": {
+					"class": "lanthanides",
+					"info": [
+						"57",
+						"La",
+						"Лантан",
+						"138.9"
+					]
+				},
+				"cerium": {
+					"class": "lanthanides",
+					"info": [
+						"58",
+						"Ce",
+						"Церий",
+						"140.1"
+					]
+				},
+				"praseodymium": {
+					"class": "lanthanides",
+					"info": [
+						"59",
+						"Pr",
+						"Празеодим",
+						"140.9"
+					]
+				},
+				"neodymium": {
+					"class": "lanthanides",
+					"info": [
+						"60",
+						"Nd",
+						"Неодим",
+						"144.2"
+					]
+				},
+				"promethium": {
+					"class": "lanthanides",
+					"info": [
+						"61",
+						"Pm",
+						"Прометий",
+						"145"
+					]
+				},
+				"samarium": {
+					"class": "lanthanides",
+					"info": [
+						"62",
+						"Sm",
+						"Самарий",
+						"150.3"
+					]
+				},
+				"europium": {
+					"class": "lanthanides",
+					"info": [
+						"63",
+						"Eu",
+						"Европий",
+						"151.9"
+					]
+				},
+				"gadolinium": {
+					"class": "lanthanides",
+					"info": [
+						"64",
+						"Gd",
+						"Гадолиний",
+						"157.2"
+					]
+				},
+				"terbium": {
+					"class": "lanthanides",
+					"info": [
+						"65",
+						"Tb",
+						"Тербий",
+						"158.9"
+					]
+				},
+				"dysprosium": {
+					"class": "lanthanides",
+					"info": [
+						"66",
+						"Dy",
+						"Диспрозий",
+						"162.5"
+					]
+				},
+				"holmium": {
+					"class": "lanthanides",
+					"info": [
+						"67",
+						"Ho",
+						"Гольмий",
+						"164.9"
+					]
+				},
+				"erbium": {
+					"class": "lanthanides",
+					"info": [
+						"68",
+						"Er",
+						"Эрбий",
+						"167.2"
+					]
+				},
+				"thulium": {
+					"class": "lanthanides",
+					"info": [
+						"69",
+						"Tm",
+						"Тулий",
+						"168.9"
+					]
+				},
+				"ytterbium": {
+					"class": "lanthanides",
+					"info": [
+						"70",
+						"Yb",
+						"Иттербий",
+						"173"
+					]
+				},
+				"lutetium": {
+					"class": "lanthanides",
+					"info": [
+						"71",
+						"Lu",
+						"Лютеций",
+						"174.9"
+					]
+				}
+			}
+		}
+	}
+
+-
+	const actinides = {
+		"head": "",
+		"body": {
+			"first_row": {
+				"actinium": {
+					"class": "actinides",
+					"info": [
+						"89",
+						"Ac",
+						"Актиний",
+						"227"
+					]
+				},
+				"thorium": {
+					"class": "actinides",
+					"info": [
+						"90",
+						"Th",
+						"Торий",
+						"232.04"
+					]
+				},
+				"protactinium": {
+					"class": "actinides",
+					"info": [
+						"91",
+						"Pa",
+						"Проактиний",
+						"231.04"
+					]
+				},
+				"uranium": {
+					"class": "actinides",
+					"info": [
+						"92",
+						"U",
+						"Уран",
+						"238.03"
+					]
+				},
+				"neptunium": {
+					"class": "actinides",
+					"info": [
+						"93",
+						"Np",
+						"Нептуний",
+						"237"
+					]
+				},
+				"plutonium": {
+					"class": "actinides",
+					"info": [
+						"94",
+						"Pu",
+						"Плутоний",
+						"244"
+					]
+				},
+				"americium": {
+					"class": "actinides",
+					"info": [
+						"95",
+						"Am",
+						"Америций",
+						"243"
+					]
+				},
+				"curium": {
+					"class": "actinides",
+					"info": [
+						"96",
+						"Cm",
+						"Кюрий",
+						"247"
+					]
+				},
+				"berkelium": {
+					"class": "actinides",
+					"info": [
+						"97",
+						"Bk",
+						"Берклий",
+						"247"
+					]
+				},
+				"californium": {
+					"class": "actinides",
+					"info": [
+						"98",
+						"Cf",
+						"Калифорний",
+						"251"
+					]
+				},
+				"einsteinium": {
+					"class": "actinides",
+					"info": [
+						"99",
+						"Es",
+						"Эйнштейний",
+						"252"
+					]
+				},
+				"fermium": {
+					"class": "actinides",
+					"info": [
+						"100",
+						"Fm",
+						"Фермий",
+						"257"
+					]
+				},
+				"mendelevium": {
+					"class": "actinides",
+					"info": [
+						"101",
+						"Md",
+						"Менделевий",
+						"258"
+					]
+				},
+				"nobelium": {
+					"class": "actinides",
+					"info": [
+						"102",
+						"No",
+						"Нобелий",
+						"259"
+					]
+				},
+				"lawrencium": {
+					"class": "actinides",
+					"info": [
+						"103",
+						"Lr",
+						"Лоуренсий",
+						"262"
+					]
+				}
+			}
+		}
+	}

@@ -1,0 +1,82 @@
+include chemistry.content.pug
+
+mixin horizontal_table(list)
+	h3= list.name
+	section.table-container
+		table(caption= list.name)
+			each row in list.content
+				tr
+					th
+						| !{row.head}
+					each val in row.body
+						td
+							| !{val}
+
+mixin vertical_table(list)
+	h3= list.name
+	section.table-container
+		table(class!=attributes.class, caption= list.name)
+			tr
+				each val in list.content.head
+					th
+						| !{val}
+			each row in list.content.body
+				tr
+					each val in row
+						td
+							| !{val}
+
+mixin mendeleev(list)
+	section.table-container
+		table.mendeleev
+			tr
+				each val in list.head
+					th= val
+			each row in list.body
+				tr
+					each val in row
+						td(class= val.class)
+							each str in val.info
+								span
+									| !{str}
+
+section.main__chem#chem
+	hr
+	h2
+		| Химия
+		<svg style="margin-left: 0.75rem;" width="18px" height="36px" viewBox="0 0 64 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M60.1406 132.259L2.38455 132.315C2.38455 132.315 -1.98945 128.623 1.11055 122.053C3.83055 116.288 18.5995 77.394 18.5995 77.394L18.1535 59.183L15.1275 59.198L14.4545 49.491L49.5775 49.207L48.8106 59.028L45.5265 59.045L44.7425 77.672C44.7425 77.672 59.8035 116.888 62.4305 122.468C65.0155 127.961 60.1406 132.259 60.1406 132.259ZM37.4805 78.277L38.1816 59.083L25.4525 59.147L25.5825 78.355L8.35555 123.712L9.50055 125.781L53.7926 125.888L55.3725 123.617L37.4805 78.277ZM21.3335 103.149C29.1515 105.496 33.7896 97.074 41.2256 101.141L48.3776 120.207L14.1145 121.341L21.3335 103.149ZM34.5085 42.551C26.8435 42.551 27.1905 31.599 34.3855 31.599C41.5545 31.599 41.5095 42.551 34.5085 42.551ZM37.3526 18.853C24.1576 18.853 24.7546 0 37.1416 0C49.4806 0.001 49.4026 18.853 37.3526 18.853ZM22.2365 27.976C14.5715 27.976 14.9186 17.024 22.1136 17.024C29.2826 17.025 29.2375 27.976 22.2365 27.976Z" />
+		</svg>
+
+		+horizontal_table(mainChemConstants)
+		+vertical_table(temperatureChem)(class="part-right")
+
+		h3 Таблица Менделеева
+		section.table-container
+			table
+				tr
+					td.nonmetals Неметаллы
+				tr
+					td.noble-gases Инертные газы
+				tr
+					td.alkali-metals Щелочные металлы
+				tr
+					td.alkaline-earth-metals Щелочноземельные металлы
+				tr
+					td.metalloids Полуметаллы
+				tr
+					td.halogens Галогены
+				tr
+					td.post-transition-metals Постпереходные металлы
+				tr
+					td.transition-metals Переходные металлы
+				tr
+					td.lanthanides Лантаноиды
+				tr
+					td.actinides Актиноиды
+				tr
+					td.trash Фигня, существующая в ускорителях. Не измеряется
+
+		+mendeleev(mainMendeleev)
+		+mendeleev(lanthanides)
+		+mendeleev(actinides)

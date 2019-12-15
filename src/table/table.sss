@@ -1,0 +1,55 @@
+section.table-container
+  position: relative
+  overflow-x: scroll
+  margin-top: 1rem
+  margin-right: calc(-1 * var(--primary-padding))
+  margin-left: calc(-1 * var(--primary-padding))
+  padding-right: var(--primary-padding)
+  padding-left: var(--primary-padding)
+  -webkit-overflow-scrolling: touch
+  -webkit-mask-image: linear-gradient(90deg,rgba(0,0,0,0) 0,rgba(0,0,0,.25) calc(var(--primary-padding)/2),rgba(0,0,0,1) var(--primary-padding),rgba(0,0,0,1) calc(100% - var(--primary-padding)),rgba(0,0,0,.25) calc(100% - var(--primary-padding)/2),rgba(0,0,0,0))
+  mask-image: linear-gradient(90deg,rgba(0,0,0,0) 0,rgba(0,0,0,.25) calc(var(--primary-padding)/2),rgba(0,0,0,1) var(--primary-padding),rgba(0,0,0,1) calc(100% - var(--primary-padding)),rgba(0,0,0,.25) calc(100% - var(--primary-padding)/2),rgba(0,0,0,0))
+
+  &::-webkit-scrollbar
+    height: 0
+
+table
+  display: inline-block
+  padding: 0.25rem 1rem
+  border-radius: 0.25rem
+  border-collapse: collapse
+  font-feature-settings: "tnum" 1
+  font-weight: 700
+  background-color: var(--table-bg)
+  text-shadow: none
+
+  &.right td,
+  &.right tr:first-of-type th:not(:first-child),
+  &.part-right tr th:not(:first-of-type),
+  &.part-right tr td:not(:first-of-type),
+  &.td-right td
+    text-align: right
+
+  tr:not(:last-child)
+    border-bottom: 1px solid var(--additional-bg)
+
+  tr
+    th:not(:last-child), td:not(:last-child)
+      padding-right: 1.25rem
+
+    th,
+    td
+      max-width: 12.5rem
+      padding-top: 0.75rem
+      padding-bottom: 0.75rem
+      padding-left: 0
+      font-weight: 700
+      line-height: 1em
+      vertical-align: top
+
+    th
+      text-align: left
+      color: var(--accent)
+
+    td p
+      margin: 0

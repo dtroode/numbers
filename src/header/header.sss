@@ -1,0 +1,65 @@
+header
+  width: calc(100% - 2 * var(--primary-padding))
+  margin-right: var(--primary-padding)
+  margin-left: var(--primary-padding)
+  margin-bottom: var(--secondary-padding)
+  background-color: var(--main-bg)
+
+  section, nav
+    display: flex
+
+  section
+    justify-content: space-between
+  
+  nav
+
+    a
+      display: inline-block
+      padding: 0.185rem 0.435rem
+      border-radius: 0.35rem
+      line-height: 1.5em
+    
+    &:first-child, &:last-child a:not(:last-child)
+      margin-right: 0.125rem
+
+    &:first-child a
+      border: 1px solid var(--additional-bg)
+      background-color: unset
+      pointer-events: none
+
+    &:last-child a
+      border: 1px solid transparent
+      background-color: var(--additional-bg)
+
+      &:hover
+        background-color: var(--additional-bg-50)
+
+  p
+    max-width: 500px
+    margin: 1rem 0.5rem
+
+
+@mixin mobile
+
+  header 
+
+    section
+      margin-right: calc(-1 * var(--primary-padding))
+      margin-left: calc(-1 * var(--primary-padding))
+      padding-right: var(--primary-padding)
+      padding-left: var(--primary-padding)
+      overflow: scroll
+      -webkit-mask-image: linear-gradient(90deg,rgba(0,0,0,0) 0,rgba(0,0,0,.25) calc(var(--primary-padding)/2),rgba(0,0,0,1) var(--primary-padding),rgba(0,0,0,1) calc(100% - var(--primary-padding)),rgba(0,0,0,.25) calc(100% - var(--primary-padding)/2),rgba(0,0,0,0))
+      mask-image: linear-gradient(90deg,rgba(0,0,0,0) 0,rgba(0,0,0,.25) calc(var(--primary-padding)/2),rgba(0,0,0,1) var(--primary-padding),rgba(0,0,0,1) calc(100% - var(--primary-padding)),rgba(0,0,0,.25) calc(100% - var(--primary-padding)/2),rgba(0,0,0,0))    
+
+    section::-webkit-scrollbar
+      display: none
+
+    nav:last-child
+      padding-right: var(--primary-padding)
+
+    nav a span
+      display: none
+
+    p
+      margin: 1rem 0

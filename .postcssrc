@@ -1,0 +1,9 @@
+{
+  "parser": "sugarss",
+  "plugins": {
+    "postcss-mixins": {
+      "mixinsDir": "./mixins"
+    },
+    "precss": {}
+  }
+}

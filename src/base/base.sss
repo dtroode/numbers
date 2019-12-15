@@ -1,0 +1,184 @@
+:root
+  --accent: #f44336
+  --accent-50: #f4433680
+  --additional-bg: #f4433630
+  --additional-bg-50: #f4433615
+  --table-bg: #f4433610
+  --main-fg: #212121
+  --main-bg: #fff8e1
+
+  --nonmetals: #ffab00
+  --noble-gases: #5d4037
+  --alkali-metals: #aa00ff
+  --alkaline-earth-metals: #2962ff
+  --metalloids: #64dd17
+  --halogens: #d50000
+  --post-transition-metals: #00c853
+  --transition-metals: #455a64
+  --lanthanides: #00b8d4
+  --actinides: #00bfa5
+  --trash: #ff6d00
+
+  --primary-padding: 1.875rem
+  --secondary-padding: 3rem
+
+@mixin mobile
+  :root
+    --primary-padding: 1.17rem
+    --secondary-padding: 3rem
+
+@mixin dark
+  :root
+    --accent: #e53935
+    --accent-50: #e5393580
+    --additional-bg: #e5393530
+    --additional-bg-50: #e5393515
+    --table-bg: #e5393510
+    --main-fg: #fff8e1
+    --main-bg: #212121
+
+    --yel: #ffab00
+    --red: #ff5131
+    --blu: #768fff
+    --pur: #e254ff
+    --sal: #9cff57
+    --gre: #5efc82
+    --bro: #bcaaa4
+    --egr: #b0bec5
+    --lbl: #62ebff
+    --ebl: #5df2d6
+    --gra: #ff9e40
+
+@media screen and (min-width: 1500px)
+  :root
+    --primary-padding: 6.4rem
+
+*, *::after, *::before
+  box-sizing: border-box
+
+*
+  scroll-behavior: smooth
+
+*::selection
+  color: var(--main-fg)
+  background-color: var(--accent)
+
+*::-moz-selection
+  color: var(--main-fg)
+  background-color: var(--accent)
+
+html
+  font-size: 16px
+
+body
+  overflow-x: hidden
+  margin: 0
+  background-color: var(--main-bg)
+
+main
+  margin: 0 auto
+  background-color: var(--main-bg)
+
+main > svg
+  width: calc(100% - 2*var(--primary-padding))
+  padding: 0 var(--primary-padding)
+
+main hr
+  margin: 0 0 1rem 0
+
+nav
+  margin: 1rem 0 0 0
+
+nav *
+  vertical-align: top
+
+h1,
+h2,
+h3,
+a,
+table,
+p
+  font-family: "PT Root UI", Arial, Helvetica, sans-serif
+
+h1,
+p,
+a,
+table
+  font-weight: 400
+
+h1,
+p,
+th,
+td
+  font-size: 1rem
+
+h1
+  margin: 0
+
+h2,
+h3,
+td
+  color: var(--main-fg)
+
+h2,
+h3
+  font-weight: 700
+  line-height: 1em
+
+h2,
+h3
+  letter-spacing: -0.02em
+
+h2
+  display: table
+  margin-top: 0
+  margin-bottom: 1.5rem
+  font-size: 2.25rem
+  text-transform: uppercase
+
+h2 svg
+  height: 100%
+  vertical-align: top
+  fill: var(--main-fg)
+
+h2 + h3
+  margin-top: 1.5rem
+
+h3
+  margin-top: 2.5rem
+  margin-bottom: 0
+  font-size: 1.5rem
+
+p, a
+  line-height: 1.4em
+  color: var(--accent)
+
+p
+  margin-top: 0
+  margin-bottom: 0
+
+a
+  text-decoration: none
+  transition: color cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s,
+    background-color cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s
+
+sup
+  vertical-align: baseline
+  position: relative
+  top: -5px
+
+sub
+  vertical-align: baseline
+  position: relative
+  bottom: -5px
+
+section.main__math,
+section.main__phys,
+section.main__chem
+  padding: 0 var(--primary-padding) var(--secondary-padding)
+    var(--primary-padding)
+
+hr
+  height: 1px
+  border: 0
+  background-color: var(--additional-bg)

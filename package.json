@@ -1,0 +1,31 @@
+{
+  "name": "postvel",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
+  "size-limit": [
+    {
+      "path": "build/index.html",
+      "limit": "10.1 KB"
+    }
+  ],
+  "scripts": {
+    "start": "parcel src/index.pug --open",
+    "build": "parcel build src/index.pug -d build",
+    "size": "npm run build && size-limit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@size-limit/preset-app": "^2.2.2",
+    "cssnano": "^4.1.10",
+    "postcss-mixins": "^6.2.3",
+    "precss": "^4.0.0",
+    "pug": "^2.0.4",
+    "sass": "^1.23.7"
+  },
+  "dependencies": {
+    "parcel-plugin-static-files-copy": "^2.2.1"
+  }
+}
