@@ -1,23 +1,21 @@
 :root
-  --accent: #f44336
-  --accent-50: #f4433680
-  --additional-bg: #f4433630
-  --additional-bg-50: #f4433615
-  --table-bg: #f4433610
+  --accent: #f4511e
+  --additional-bg: #f4511e30
+  --additional-bg-50: #f4511e15
   --main-fg: #212121
-  --main-bg: #fff8e1
+  --main-bg: #ffe0b2
 
-  --nonmetals: #ffab00
-  --noble-gases: #5d4037
-  --alkali-metals: #aa00ff
-  --alkaline-earth-metals: #2962ff
-  --metalloids: #64dd17
-  --halogens: #d50000
-  --post-transition-metals: #00c853
-  --transition-metals: #455a64
-  --lanthanides: #00b8d4
-  --actinides: #00bfa5
-  --trash: #ff6d00
+  --nonmetals: #558b2f
+  --noble-gases: #00838f
+  --alkali-metals: #6a1b9a
+  --alkaline-earth-metals: #0277bd
+  --metalloids: #ef6c00
+  --halogens: #d84315
+  --post-transition-metals: #9e9d24
+  --transition-metals: #c62828
+  --lanthanides: #008e76
+  --actinides: #0088a3
+  --trash: #424242
 
   --primary-padding: 1.875rem
   --secondary-padding: 3rem
@@ -29,25 +27,23 @@
 
 @mixin dark
   :root
-    --accent: #e53935
-    --accent-50: #e5393580
-    --additional-bg: #e5393530
-    --additional-bg-50: #e5393515
-    --table-bg: #e5393510
-    --main-fg: #fff8e1
+    --accent: #c41c00
+    --additional-bg: #c41c0030
+    --additional-bg-50: #c41c0015
+    --main-fg: #ffe0b2
     --main-bg: #212121
 
-    --yel: #ffab00
-    --red: #ff5131
-    --blu: #768fff
-    --pur: #e254ff
-    --sal: #9cff57
-    --gre: #5efc82
-    --bro: #bcaaa4
-    --egr: #b0bec5
-    --lbl: #62ebff
-    --ebl: #5df2d6
-    --gra: #ff9e40
+    --nonmetals: #85bb5c
+    --noble-gases: #4fb3bf
+    --alkali-metals: #9c4dcc
+    --alkaline-earth-metals: #58a5f0
+    --metalloids: #ff9d3f
+    --halogens: #ff7543
+    --post-transition-metals: #d2ce56
+    --transition-metals: #ff5f52
+    --lanthanides: #5df2d6
+    --actinides: #62ebff
+    --trash: #c2c2c2
 
 @media screen and (min-width: 1500px)
   :root
@@ -85,12 +81,6 @@ main > svg
 
 main hr
   margin: 0 0 1rem 0
-
-nav
-  margin: 1rem 0 0 0
-
-nav *
-  vertical-align: top
 
 h1,
 h2,
@@ -151,7 +141,7 @@ h3
 
 p, a
   line-height: 1.4em
-  color: var(--accent)
+  color: var(--main-fg)
 
 p
   margin-top: 0
