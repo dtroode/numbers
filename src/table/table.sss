@@ -14,46 +14,51 @@ section.table-container
   &::-webkit-scrollbar
     height: 0
 
-table
-  display: inline-block
-  padding: 0.25rem 1rem
-  border-radius: 0.25rem
-  border-collapse: collapse
-  font-feature-settings: "tnum" 1
-  background-color: var(--additional-bg-50)
+  table
+    display: inline-flex
+    padding: 0.25rem 1rem
+    border-radius: 0.25rem
+    border-collapse: collapse
+    font-feature-settings: "tnum" 1
+    background-color: var(--additional-bg-50)
 
-  &.right td,
-  &.right tr:first-of-type th:not(:first-child),
-  &.part-right tr th:not(:first-of-type),
-  &.part-right tr td:not(:first-of-type),
-  &.td-right td
-    text-align: right
+    &.right td,
+    &.right tr:first-of-type th:not(:first-child),
+    &.part-right tr th:not(:first-of-type),
+    &.part-right tr td:not(:first-of-type),
+    &.td-right td
+      text-align: right
 
-  tr:not(:last-child)
-    border-bottom: 1px solid var(--additional-bg)
+    tr:not(:last-child)
+      border-bottom: 1px solid var(--additional-bg)
 
-  tr
-    &:empty
-      display: none
+    tr
+      &:empty
+        display: none
 
-    th:not(:last-child), td:not(:last-child)
-      padding-right: 1.25rem
+      th:not(:last-child), td:not(:last-child)
+        padding-right: 1.25rem
 
-    th,
-    td
-      max-width: 12.5rem
-      padding-top: 0.75rem
-      padding-bottom: 0.75rem
-      padding-left: 0
-      line-height: 1em
-      vertical-align: top
+      th,
+      td
+        max-width: 12.5rem
+        padding-top: 0.75rem
+        padding-bottom: 0.75rem
+        padding-left: 0
+        line-height: 1em
+        vertical-align: top
 
-    th
-      color: var(--table-header-fg)
-      text-align: left
+      th
+        color: var(--table-header-fg)
+        text-align: left
 
-    td p
-      margin: 0
+      td p
+        margin: 0
+
+  p.table-caption
+    display: inline-block
+    margin-top: 0.75rem
+    vertical-align: top
 
 @mixin desktop
   table
