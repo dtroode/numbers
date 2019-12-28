@@ -6,12 +6,13 @@
   "size-limit": [
     {
       "path": "build/index.html",
-      "limit": "10.1 KB"
+      "limit": "11 KB"
     }
   ],
   "scripts": {
     "start": "parcel src/index.pug --open",
     "build": "parcel build src/index.pug -d build",
+    "deploy": "npm run build && cd build && now --prod",
     "size": "npm run build && size-limit"
   },
   "keywords": [],
@@ -23,6 +24,7 @@
     "parcel-plugin-static-files-copy": "^2.2.1",
     "postcss-mixins": "^6.2.3",
     "precss": "^4.0.0",
-    "pug": "^2.0.4"  },
+    "pug": "^2.0.4"
+  },
   "dependencies": {}
 }
