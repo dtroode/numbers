@@ -55,13 +55,17 @@ section.table-container
       td p
         margin: 0
 
-  p.table-caption
+  .table-caption
     display: inline-block
+    max-width: 500px
     margin-top: 0.75rem
     vertical-align: top
 
     &:empty
       display: none
+
+  ol
+    padding-left: 1rem
 
 @mixin desktop
   table
