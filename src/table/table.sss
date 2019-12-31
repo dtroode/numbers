@@ -20,7 +20,7 @@ section.table-container
     border-radius: 0.25rem
     border-collapse: collapse
     font-feature-settings: "tnum" 1
-    background-color: var(--additional-bg-50)
+    background-color: var(--tableBackgroundColor)
 
     &.right td,
     &.right tr:first-of-type th:not(:first-child),
@@ -30,7 +30,7 @@ section.table-container
       text-align: right
 
     tr:not(:last-child)
-      border-bottom: 1px solid var(--additional-bg)
+      border-bottom: 1px solid var(--rullerColor)
 
     tr
       &:empty
@@ -49,7 +49,8 @@ section.table-container
         vertical-align: top
 
       th
-        color: var(--table-header-fg)
+        /* color: var(--accentColor) */
+        color: var(--foregroundColor)
         text-align: left
 
       td p
@@ -64,8 +65,14 @@ section.table-container
     &:empty
       display: none
 
-  ol
-    padding-left: 1rem
+  ul
+    padding-left: 0
+
+    li
+      list-style-type: none
+
+      &::before
+        content: "— "
 
 @mixin desktop
   table

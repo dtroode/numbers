@@ -26,5 +26,9 @@
     "precss": "^4.0.0",
     "pug": "^2.0.4"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dtroode/postvel"
+  }
 }
