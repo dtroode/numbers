@@ -4,8 +4,6 @@ section.table-container
   margin-top: 1rem
   margin-right: calc(-1 * var(--primary-padding))
   margin-left: calc(-1 * var(--primary-padding))
-  padding-right: var(--primary-padding)
-  padding-left: var(--primary-padding)
   scrollbar-width: none
   -webkit-overflow-scrolling: touch
   -webkit-mask-image: linear-gradient(90deg,rgba(0,0,0,0) 0,rgba(0,0,0,.25) calc(var(--primary-padding)/2),rgba(0,0,0,1) var(--primary-padding),rgba(0,0,0,1) calc(100% - var(--primary-padding)),rgba(0,0,0,.25) calc(100% - var(--primary-padding)/2),rgba(0,0,0,0))
@@ -16,6 +14,7 @@ section.table-container
 
   table
     display: inline-flex
+    margin: 0 var(--primary-padding)
     padding: 0.25rem 1rem
     border-radius: 0.25rem
     border-collapse: collapse
@@ -60,6 +59,8 @@ section.table-container
     display: inline-block
     max-width: 500px
     margin-top: 0.75rem
+    margin-left: var(--primary-padding)
+    margin-right: var(--primary-padding)
     vertical-align: top
 
     &:empty
@@ -73,7 +74,3 @@ section.table-container
 
       &::before
         content: "— "
-
-@mixin desktop
-  table
-    margin-right: var(--primary-padding)
