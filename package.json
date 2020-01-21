@@ -1,21 +1,81 @@
 {
   "name": "postvel",
   "version": "3.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Maths, physics and chemistry constants",
+  "main": "index.html",
   "size-limit": [
     {
       "path": "build/index.html",
-      "limit": "11 KB"
+      "limit": "12.37 KB"
     }
   ],
-  "scripts": {
-    "start": "parcel src/index.pug --open",
-    "build": "parcel build src/index.pug -d build",
-    "deploy": "npm run build && cd build && now --prod",
-    "size": "npm run build && size-limit"
+  "stylelint": {
+    "plugins": [
+      "stylelint-order"
+    ],
+    "extends": [
+      "stylelint-config-rational-order"
+    ],
+    "rules": {
+      "plugin/rational-order": [
+        true,
+        {
+          "empty-line-between-groups": true
+        }
+      ],
+      "declaration-block-trailing-semicolon": null,
+      "block-closing-brace-newline-before": null,
+      "block-opening-brace-space-before": null,
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "define-mixin",
+            "mixin"
+          ]
+        }
+      ],
+      "color-named": "never",
+      "order/order": [
+        "declarations",
+        {
+          "type": "at-rule",
+          "name": "media"
+        },
+        {
+          "type": "rule",
+          "selector": "^&::(before|after)"
+        },
+        {
+          "type": "rule",
+          "selector": "^&:\\w"
+        },
+        {
+          "type": "rule",
+          "selector": "^&_"
+        },
+        {
+          "type": "rule",
+          "selector": "^."
+        }
+      ]
+    }
   },
-  "keywords": [],
+  "scripts": {
+    "develop": "parcel src/index.pug --open",
+    "build": "parcel build src/index.pug -d build",
+    "check": "stylelint \"src/*/*.sss\" && npm run build && size-limit",
+    "deploy": "npm run check && cd build && now --prod"
+  },
+  "keywords": [
+    "maths",
+    "physics",
+    "chemistry",
+    "constants",
+    "science",
+    "parcel",
+    "pug"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -24,7 +84,9 @@
     "parcel-plugin-static-files-copy": "^2.2.1",
     "postcss-mixins": "^6.2.3",
     "precss": "^4.0.0",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "stylelint": "^13.0.0",
+    "stylelint-order": "^4.0.0"
   },
   "dependencies": {},
   "repository": {
