@@ -1,10 +1,11 @@
 footer
   width: calc(100% - 2 * var(--primary-padding))
   margin-right: var(--primary-padding)
-  margin-left: var(--primary-padding)
   margin-bottom: var(--secondary-padding)
-  border-top: 1px solid var(--rullerColor)
+  margin-left: var(--primary-padding)
+
   background-color: var(--backgroundColor)
+  border-top: 1px solid var(--rullerColor)
 
   section
     display: inline-block
@@ -19,8 +20,9 @@ footer
           color: var(--accentColor)
 
         &:focus
-          border-bottom: 0
-          box-shadow: 0 0 0 2px var(--accentColor)
           color: var(--accentColor)
+
           background-color: var(--rullerColor)
+          border-bottom: 0
           outline: 0
+          box-shadow: 0 0 0 2px var(--accentColor)
