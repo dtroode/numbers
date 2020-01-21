@@ -1,9 +1,10 @@
 section.table-container
   position: relative
-  overflow-x: scroll
+
   margin-top: 1rem
   margin-right: calc(-1 * var(--primary-padding))
   margin-left: calc(-1 * var(--primary-padding))
+  overflow-x: scroll
   scrollbar-width: none
   -webkit-overflow-scrolling: touch
   -webkit-mask-image: linear-gradient(90deg,rgba(0,0,0,0) 0,rgba(0,0,0,.25) calc(var(--primary-padding)/2),rgba(0,0,0,1) var(--primary-padding),rgba(0,0,0,1) calc(100% - var(--primary-padding)),rgba(0,0,0,.25) calc(100% - var(--primary-padding)/2),rgba(0,0,0,0))
@@ -16,10 +17,11 @@ section.table-container
     display: inline-flex
     margin: 0 var(--primary-padding)
     padding: 0.25rem 1rem
+
+    background-color: var(--tableBackgroundColor)
     border-radius: 0.25rem
     border-collapse: collapse
-    font-feature-settings: "tnum" 1
-    background-color: var(--tableBackgroundColor)
+    font-feature-settings: "case" 1, "tnum" 1
 
     &.right td,
     &.right tr:first-of-type th:not(:first-child),
@@ -44,11 +46,11 @@ section.table-container
         padding-top: 0.75rem
         padding-bottom: 0.75rem
         padding-left: 0
+
         line-height: 1em
         vertical-align: top
 
       th
-        /* color: var(--accentColor) */
         color: var(--foregroundColor)
         text-align: left
 
@@ -59,8 +61,9 @@ section.table-container
     display: inline-block
     max-width: 500px
     margin-top: 0.75rem
-    margin-left: var(--primary-padding)
     margin-right: var(--primary-padding)
+    margin-left: var(--primary-padding)
+
     vertical-align: top
 
     &:empty
@@ -71,6 +74,5 @@ section.table-container
 
     li
       list-style-type: none
-
       &::before
         content: "— "
