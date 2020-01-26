@@ -2,6 +2,7 @@
   "name": "postvel",
   "version": "3.0.0",
   "description": "Maths, physics and chemistry constants",
+  "author": "David Kistauri",
   "main": "index.html",
   "size-limit": [
     {
@@ -73,8 +74,6 @@
     "parcel",
     "pug"
   ],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@size-limit/preset-app": "^2.2.2",
     "cssnano": "^4.1.10",
@@ -89,5 +88,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/dtroode/postvel"
-  }
+  },
+  "license": "ISC"
 }
