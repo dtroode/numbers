@@ -3,6 +3,11 @@
   "short_name": "Константы",
   "icons": [
     {
+      "src": "base/logo.png",
+      "sizes": "667x667",
+      "type": "image/png"
+    },
+    {
       "src": "base/logo-256.png",
       "sizes": "256x256",
       "type": "image/png"
