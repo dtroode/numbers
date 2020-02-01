@@ -24,13 +24,13 @@
   --actinidesColor: #0088a3
   --trashColor: #424242
 
-  --primary-padding: 1.875rem
-  --secondary-padding: 3rem
+  --primaryPadding: 1.875rem
+  --secondaryPadding: 3rem
 
 @mixin mobile
   :root
-    --primary-padding: 1.17rem
-    --secondary-padding: 3rem
+    --primaryPadding: 1.17rem
+    --secondaryPadding: 3rem
 
 @mixin dark
   :root
@@ -92,10 +92,6 @@ main
   margin: 0 auto
 
   background-color: var(--backgroundColor)
-
-main > svg
-  width: calc(100% - 2*var(--primary-padding))
-  padding: 0 var(--primary-padding)
 
 h1,
 p,
@@ -205,8 +201,8 @@ sub
 section.main__math,
 section.main__phys,
 section.main__chem
-  padding: 0 var(--primary-padding) var(--secondary-padding)
-    var(--primary-padding)
+  padding: 0 var(--primaryPadding) var(--secondaryPadding)
+    var(--primaryPadding)
 
 hr
   height: 1px
