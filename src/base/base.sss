@@ -8,6 +8,7 @@
 
   /* Accent colors */
   --accentColor: #c5002d
+  --rullerHoverColor: #c5002d26
   --headerLinksColor: #c5002d25
   --tableBackgroundColor: #c5002d09
 
@@ -43,6 +44,7 @@
 
     /* Accent colors */
     --accentColor: #ff4256
+    --rullerHoverColor: #ff425626
     --headerLinksColor: #ff425670
     --tableBackgroundColor: #ff425615
 
@@ -215,23 +217,27 @@ section.main__chem
 
 section.navigation article
   display: inline-block
-  vertical-align: top
   padding-right: var(--secondaryPadding)
 
+  vertical-align: top
+
   ul
-    padding: 0
     margin-top: 0
     margin-bottom: 1.5rem
+    padding: 0
 
     li
-      list-style: none
       margin-top: 0.4rem
+
+      list-style: none
 
       a
         border-bottom: 1px solid var(--rullerColor)
 
         &:hover, &:focus
           color: var(--accentColor)
+
+          border-bottom-color: var(--rullerHoverColor)
 
         &:focus
           color: var(--accentColor)
