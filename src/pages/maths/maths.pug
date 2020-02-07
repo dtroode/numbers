@@ -30,7 +30,7 @@ mixin corner_table(list)
 		p.table-caption
 			| !{list.description}
 
-section.main__math#maths
+section.main__maths#maths
 	hr
 	h2
 		a(href="#maths", title="Прямая ссылка на раздел")
@@ -39,11 +39,21 @@ section.main__math#maths
 				<path fill-rule="evenodd" clip-rule="evenodd" d="M1.11492 0C1.11492 0 -0.0370801 69.713 0.00091985 73.468C0.0639199 79.942 2.61692 83.054 8.21492 83.121C12.7299 83.174 38.6539 83.909 44.4399 83.853C51.0389 83.791 53.3599 80.098 53.4299 74.1C53.4699 70.785 53.4669 0.131001 53.4669 0.131001L1.11492 0ZM12.7109 52.005C18.8049 52.005 18.7659 61.256 12.8149 61.256C6.29792 61.256 6.59392 52.005 12.7109 52.005ZM12.7109 37.018C18.8049 37.018 18.7659 46.269 12.8149 46.269C6.29792 46.269 6.59392 37.018 12.7109 37.018ZM13.1629 76.112C6.64592 76.112 6.94292 66.861 13.0589 66.861C19.1519 66.861 19.1139 76.112 13.1629 76.112ZM27.1599 37.018C33.2529 37.018 33.2149 46.269 27.2639 46.269C20.7469 46.269 21.0419 37.018 27.1599 37.018ZM27.3549 52.005C33.4479 52.005 33.4089 61.256 27.4589 61.256C20.9419 61.256 21.2379 52.005 27.3549 52.005ZM27.6119 76.112C21.0949 76.112 21.3909 66.861 27.5079 66.861C33.6009 66.861 33.5629 76.112 27.6119 76.112ZM18.2989 26.578C9.57592 26.578 7.55492 21.214 7.68492 12.958L45.5399 12.995C46.1919 23.942 43.3169 26.678 35.1599 26.678C33.2109 26.678 20.4109 26.578 18.2989 26.578ZM41.7449 61.256C35.2279 61.256 35.5239 52.005 41.6399 52.005C47.7329 52.005 47.6939 61.256 41.7449 61.256ZM41.7449 46.269C35.2279 46.269 35.5239 37.018 41.6399 37.018C47.7329 37.018 47.6939 46.269 41.7449 46.269Z" />
 			</svg>
 
+	section.main__maths__navigation.navigation
+		each section in maths_content
+			article
+				h4= section.section_name
+				nav
+					ul
+						each link in section.section_content
+							li
+								a(href= `#${link.id}`)= link.name
+
 	+horizontal_table(doln)(id="doln")
 	+horizontal_table(crat)(id="crat")
 	+corner_table(squares)(id="squares")
+	+horizontal_table(main_maths_constants)(id="main-maths-constants")
 	+corner_table(trigonometry_functions)(id="trigonometry-functions")
 	+corner_table(ghostly)(id="ghostly")
 	+horizontal_table(derivative)(id="derivative")
 	+horizontal_table(antiderivative)(id="antiderivative")
-	+horizontal_table(main_maths_constants)(id="main-maths-constants")
