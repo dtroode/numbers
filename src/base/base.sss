@@ -95,9 +95,6 @@ main
 
   background-color: var(--backgroundColor)
 
-main > svg
-  transform: translateX(-50%)
-
 h1,
 p,
 table
@@ -246,6 +243,14 @@ section.navigation article
           border-bottom: 0
           outline: 0
           box-shadow: 0 0 0 2px var(--accentColor)
+
+img
+  position: relative
+  left: 50%
+  width: 100%
+  padding: 0 var(--primaryPadding)
+  max-width: 600px
+  transform: translateX(-50%)
 
 hr
   height: 1px
