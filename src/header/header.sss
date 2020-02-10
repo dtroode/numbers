@@ -20,6 +20,8 @@ header
       margin-right: 0.065rem
 
     &:first-child a
+      margin-right: 1rem
+
       background-color: unset
       border: 1px solid var(--rullerColor)
 
@@ -31,6 +33,9 @@ header
 
       &:hover, &:focus
         background-color: var(--tableBackgroundColor)
+      
+      &:last-child
+        margin-left: 1rem
 
     a
       display: inline-block
@@ -72,8 +77,15 @@ header
     section::-webkit-scrollbar
       display: none
 
-    nav:last-child
-      padding-right: var(--primaryPadding)
+    nav
+      &:first-child a
+        margin-right: 0
+
+      &:last-child
+        padding-right: var(--primaryPadding)
+
+        a:last-child
+          margin-left: 0
 
     nav a span
       display: none
