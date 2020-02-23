@@ -54,10 +54,11 @@
     }
   },
   "scripts": {
-    "develop": "parcel src/index.pug --open",
+    "start": "parcel src/index.pug --open",
+    "lint": "stylelint \"src/*/*.sss\" --fix",
     "build": "parcel build src/index.pug -d build",
-    "check": "stylelint \"src/*/*.sss\" --fix",
-    "deploy": "npm run check && npm run build && cd build && now --prod"
+    "clean": "rm -rf dist/",
+    "deploy": "npm run lint && npm run build && cd build && now --prod"
   },
   "keywords": [
     "maths",
