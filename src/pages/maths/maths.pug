@@ -11,8 +11,8 @@ mixin horizontal_table(list)
 					each val in row.body
 						td
 							| !{val}
-		p.table-caption
-			| !{list.description}
+	p.table-caption
+		| !{list.description}
 
 mixin corner_table(list)
 	h3(id!=attributes.id)
@@ -27,8 +27,8 @@ mixin corner_table(list)
 					each val in row.body
 						td
 							| !{val}
-		p.table-caption
-			| !{list.description}
+	p.table-caption
+		| !{list.description}
 
 section.main__maths#maths
 	hr
