@@ -1,16 +1,16 @@
 :root
   /* Background color */
-  --backgroundColor: #ffe1a1
+  --backgroundColor: #fdf6e3
 
   /* Foreground colors */
-  --foregroundColor: #1c1e26
-  --rullerColor: #1c1e2626
+  --foregroundColor: #073642
+  --rullerColor: #07364226
 
   /* Accent colors */
-  --accentColor: #c5002d
-  --rullerHoverColor: #c5002d26
-  --headerLinksColor: #c5002d25
-  --tableBackgroundColor: #c5002d09
+  --accentColor: #cb4b16
+  --rullerHoverColor: #cb4b1626
+  --headerLinksColor: #cb4b1625
+  --tableBackgroundColor: #cb4b1609
 
   /* Chemistry table elements color */
   --nonmetalsColor: #558b2f
@@ -36,17 +36,17 @@
 @mixin dark
   :root
     /* Background color */
-    --backgroundColor: #1c1e26
+    --backgroundColor: #002b36
 
     /* Foreground colors */
-    --foregroundColor: #ccb4a0
-    --rullerColor: #ccb4a026
+    --foregroundColor: #839496
+    --rullerColor: #83949626
 
     /* Accent colors */
-    --accentColor: #ff4256
-    --rullerHoverColor: #ff425626
-    --headerLinksColor: #ff425670
-    --tableBackgroundColor: #ff425615
+    --accentColor: #cb4b16
+    --rullerHoverColor: #cb4b1626
+    --headerLinksColor: #cb4b1640
+    --tableBackgroundColor: #cb4b1620
 
     /* Chemistry table elements color */
     --nonmetalsColor: #85bb5c
@@ -150,10 +150,12 @@ h2
   text-transform: uppercase
 
   a
+    svg
+      transition: fill cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s
+
     &:hover, &:focus
       svg
-        transition: fill cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s
-
+        transition: none
         fill: var(--foregroundColor)
 
 h2 svg
@@ -194,6 +196,9 @@ a
     background-color cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s,
     box-shadow 0.2s
 
+  &:hover, &:focus
+    transition: none
+
 td
   color: var(--foregroundColor)
          
@@ -214,7 +219,6 @@ section.main__chem
     var(--primaryPadding)
 
 section.navigation article
-  display: inline-block
   padding-right: var(--secondaryPadding)
 
   vertical-align: top
@@ -244,6 +248,10 @@ section.navigation article
           border-bottom: 0
           outline: 0
           box-shadow: 0 0 0 2px var(--accentColor)
+
+@mixin desktop
+  section.navigation article
+    display: inline-block
 
 img
   position: relative
