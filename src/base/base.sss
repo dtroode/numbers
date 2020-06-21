@@ -150,13 +150,14 @@ h2
   text-transform: uppercase
 
   a
-    svg
-      transition: fill cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s
 
     &:hover, &:focus
       svg
         transition: none
+
         fill: var(--foregroundColor)
+    svg
+      transition: fill cubic-bezier(0.07, 0.74, 0.38, 1.01) 0.5s
 
 h2 svg
   height: 100%
