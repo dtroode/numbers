@@ -1,6 +1,6 @@
-# [Postvel](https://postvel.now.sh)
+# [Postvel](https://postvel.vercel.app)
 
-<img src="https://postvel.now.sh/logo-128.b2d63078.png" align="right" width="100px" height="100px" alt="Postvel logo">
+<img src="https://postvel.vercel.app/logo-128.b2d63078.png" align="right" width="100px" height="100px" alt="Postvel logo">
 
 If you want to contribute, you can help me with content ideas or fixing errors.
 
