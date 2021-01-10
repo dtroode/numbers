@@ -81,7 +81,9 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-order": "^4.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "now": "^19.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/dtroode/postvel"
