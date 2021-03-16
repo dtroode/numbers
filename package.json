@@ -76,7 +76,7 @@
     "parcel-plugin-static-files-copy": "^2.3.1",
     "postcss-mixins": "^6.2.3",
     "precss": "^4.0.0",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "stylelint": "^13.5.0",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-order": "^4.0.0"
