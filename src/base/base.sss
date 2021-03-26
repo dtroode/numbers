@@ -187,7 +187,7 @@ h4, p, ul
   color: var(--foregroundColor)
   line-height: 1.4em
 
-p
+p, ul
   max-width: 500px
   margin-top: 0
   margin-bottom: 0
@@ -202,6 +202,16 @@ a
 
   &:hover, &:focus
     transition: none
+
+ul
+  padding-left: 2rem
+  list-style-type: none
+
+  li
+    margin-top: 0.25rem
+
+    &::before
+      content: "*"
 
 td
   color: var(--foregroundColor)

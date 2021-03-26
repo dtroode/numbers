@@ -3,26 +3,26 @@ footer
   margin-right: var(--primaryPadding)
   margin-bottom: var(--secondaryPadding)
   margin-left: var(--primaryPadding)
+  padding-top: 1rem
 
   background-color: var(--backgroundColor)
   border-top: 1px solid var(--rullerColor)
 
-  section
-    display: inline-block
+  a
+    border-bottom: 1px solid var(--rullerColor)
 
-    nav 
-      margin-top: 1rem
+    &:hover, &:focus
+      color: var(--accentColor)
 
-      a
-        border-bottom: 1px solid var(--rullerColor)
+      border-bottom-color: var(--rullerHoverColor)
 
-        &:hover, &:focus
-          color: var(--accentColor)
-
-          border-bottom-color: var(--rullerHoverColor)
-
-        &:focus
-          background-color: var(--rullerColor)
-          border-bottom: 0
-          outline: 0
-          box-shadow: 0 0 0 2px var(--accentColor)
+    &:focus
+      background-color: var(--rullerColor)
+      border-bottom: 0
+      outline: 0
+      box-shadow: 0 0 0 2px var(--accentColor)
+  
+  span
+    display: block
+    margin-top: 1rem
+    font-size: 10vw
