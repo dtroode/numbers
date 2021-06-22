@@ -28,12 +28,12 @@
   --primaryPadding: 1.875rem
   --secondaryPadding: 3rem
 
-@mixin mobile
+@media screen and (max-width: 900px)
   :root
     --primaryPadding: 1.17rem
     --secondaryPadding: 3rem
 
-@mixin dark
+@media (prefers-color-scheme: dark)
   :root
     /* Background color */
     --backgroundColor: #000000
@@ -253,7 +253,7 @@ section.navigation article
           outline: 0
           box-shadow: 0 0 0 2px var(--accentColor)
 
-@mixin desktop
+@media screen and (min-width: 871px)
   section.navigation article
     display: inline-block
 
