@@ -3,11 +3,10 @@
   "version": "3.0.0",
   "description": "Maths, physics and chemistry constants",
   "author": "David Kistauri",
-  "main": "index.html",
   "scripts": {
     "start": "parcel src/index.pug --open",
     "lint": "stylelint \"src/*/*.sss\" --fix",
-    "build": "parcel build src/index.pug -d build",
+    "build": "parcel build src/index.pug",
     "clean": "rm -rf dist/",
     "deploy": "npm run lint && npm run build && cd build && now --prod"
   },
@@ -21,6 +20,7 @@
     "pug"
   ],
   "devDependencies": {
+    "@parcel/transformer-pug": "^2.0.0-rc.0",
     "cssnano": "^5.0.8",
     "minimist": ">=0.2.1",
     "parcel": "^2.0.0-rc.0",
